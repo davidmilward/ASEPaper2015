@@ -1,0 +1,25 @@
+\section{Implementation}
+
+Groovy was chosen as a language for implementation for two reasons, firstly
+it has a very efficient web framework called Grails built on the Spring framework,
+which is not only proven to be very robust and scalable, but is also
+very easy to implement and so enables quick development cycles. Previous
+implementations using Java/Spring and Java/Roo have proved very timeconsuming
+to experiment with, Grails has proven to be very flexible. The
+second reason was that Grails offers both functional capability, and dynamic
+meta-programming capability. This means that DSL’s can be easily built on
+this framework, something that hasn’t been used yet, but will be needed when
+the automatic forms generation capability is added. At this stage I have built 2
+forms generating DSLs, although must more work will be required to get one
+that can implement automatic forms generation.
+ 
+The MDR implementation discussed here has been implemented using the
+Groovy programming language, and the Grails Framework and is based on
+the concepts put forward in the ISO11179 standard. There are a few changes
+to basic model in that the idea of a Data Element Concept has been merged
+with the idea of aModel. Data Elements have been retained, and they are related
+to both aModel and a Value Domain. Models can contain other models,
+and are essentially the basic building block of the data definitions, however
+at their lowest resolution a model will be composed of a Data Element and at
+least one Value Domain.
+ 
