@@ -50,34 +50,48 @@ If we turn to the ISO standards we obtain these definitions:
 The simple mapping between DEC's and VD's is perhaps better replaced with a functional relationship, and in section 2 we will explore the idea of a functional relationship between the two, its advantages and disadvantages. For now we will just try and describe the MDR according to the ISO specification. If we consider a single model of a system then we are putting constraints on the extent of the VD's, or if a set of VD's is considered to be a conceptual domain then we are constraining the model to a single CD.  By doing this we can model the system using functional relationships, so make a total function relating the model DEC's to the VD's \emph{in a particular conceptual domain}, since all the DEC's will have a mapping to a VD. It is not an injective function because of course more than one DEC can use the same representation or VD, and it is not surjective because there can be VD's in that particular Conceptual Domain which are not used in the model. It may be that a more useful model can be built by using the term Conceptual Domain to mean just those elements related to a \emph{group} of data elements, in which case we could specify a surjective relationship.  The ISO standard does not specify anything about \emph{groups} of data elements, so it would be perfectly reasonable to introduce just such a constraint. 
 
 
-As an illustration lets take the case of a marine systems model in which there may be a data element, say depth below sea-level, which is being recorded in the event that the naval vessel on which the instrument is placed is a submarine.  However it may not be, in which case no actual values of depth will be recorded, measured or used in the system. In the implementation therefore we are using the set of value domains mapped to actual values (VAL), and so the actual depth (AD) can be viewed as a partial function:
-\vskip 4mm 
+As an illustration lets take the case of a medical systems model in which there may be some data elements, let's say \emph{blood pressure} and \emph{location}, which are being recorded.  However it may not be, in which case no actual values of depth will be recorded, measured or used in the system. In the implementation we are using the set of value domains mapped to actual values (VAL), and so the blood pressure (BP) can be viewed as a partial function, since there may be data points taken at times when other values are measured and not the blood pressure:
 \begin{zed}
 	[VAL]\\
-	AD == VD \pfun VAL
+	BP == VD \pfun VAL
 \end{zed}
-\vskip 4mm 
-since while the vessel is on the surface we have nothing recorded and thus no VD mapping to a VAL, or AD == \{\}.  
+ 
+ 
 
 Consider the definition of a \emph{Conceptual Domain}:
 \begin{quote}
-	A conceptual domain is a set of value meanings. The intension of a conceptual domain is its value meanings. Many value domains may be in the extension of the same conceptual domain, but a value domain is associated with one conceptual domain. Conceptual domains may have relationships with other conceptual domains, so it is possible to create a concept system of conceptual domains. Value domains may have relationships with other value domains, which provide the framework to capture the structure of sets of related value domains and their associated concepts.
-	
+	A conceptual domain is a set of value meanings. The intention of a conceptual domain is to detail the model's value meanings. Many value domains may be in the extension of the same conceptual domain, but a value domain is associated with one conceptual domain. Conceptual domains may have relationships with other conceptual domains, so it is possible to create a concept system of conceptual domains. Value domains may have relationships with other value domains, which provide the framework to capture the structure of sets of related value domains and their associated concepts.	
 \end{quote}
-
+Conceptual domains comprise sets of value domains, however in the current prototype implementation of conceptual Domains has been omitted, since there has been up to now no use case warranting their inclusion.
 
 \subsection{A Metadata Language and Abstract Architecture }
 
-The ISO11179 specification illustrates different aspects of the standard using UML class diagrams, we have used these to inform the development of a very simple domain specific language based on the standard. The main differences are that we have added in containers to handle data element collections, calling these \emph{Models} and to handle collections of these \emph{Models} which we have called \emph{Classifications}.
+The ISO11179 specification illustrates different aspects of the standard using UML class diagrams, we have used these to inform the development of a very simple domain specific language, which we are calling \textbf{DataMOF} based on the standard. The main differences are that we have added in containers to handle data element collections, calling these \emph{Classes} and to handle collections of these \emph{Classes} which we have called \emph{Models}.
 
-A simplified overview model, without attributes and methods, is shown in Figure \ref{fig:basicMDR}.
+A simplified overview model, without attributes and methods, showing the Ecore model for the DataMOF DSL is shown in Figure \ref{fig:mcSimplifiedOverview}.
 
 \begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{MCSimplifiedOverview}
-	\caption{Overview model for a Metadata Registry} 
+	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{DMOF_EcoreDiagram}
+	\caption{Overview Ecore DSL for Model Catalogue} 
 	\label{fig:mcSimplifiedOverview}
 \end{figure}
 
+\subsubsection{Model}
+A model is a grouping or containment entity which groups a set of \emph{Classes} together. Models can be thought of as datasets, or even database schemas, very often in the medical domain they are defined either by XML Schema definition files, or by equivalent schemas written in Excel. 
+Models are collections of either \emph{Data Elements} or \emph{Classes}. This aspect is captured in the \emph{Emfatic} representation by the \emph{AbstractElement} which can be either a  \emph{Data Element} or a \emph{Class}  There is no real notion of composition or multiplicity, a instance of a Model can contain an instance of a Data Element or not as required by the instance.  Models are named, have a description and have a version identity.
+\subsubsection{Class}
+A Class is a grouping or collection of \emph{attributes} which can be data elements or classes, the attributes are currently \emph{mandatory}, so that class with 5 attributes must have those 5 attributes instantiated in an instance for it to be considered of that class. Classes represent \emph{Concepts}, (***This is not true present****)and can be \emph{Generalized} into a hierarchy(**but we might get it implemented before the paper comes out**). The idea of a \emph{Data Element Concept} was omitted from the initial prototype, although it has been added to later versions of the language.
+\subsection{Data Elements} 
+Data Elements can also represent \emph{Concepts} and are by their nature \emph{atomic}.  Each data element is related to a value domain on a one-to-one basis, and the relationship is a two-way relationship.
+\subsection{Value Domain}
+A Value Domain is the domain in which the data element is represented, it can consist of one or more \emph{ValueSpecs}.
+\subsection{ValueSpec}
+A \emph{ValueSpec} can be a simple datatype, an enumeration of datatypes, or a rule - such as a regular expression - which defines the way in which a series of characters is formed into a string attribute. 
+
+
+
+
+\lstinputlisting[label=DMof,caption=DMOF in Emfatic Notation]{ASEFigs/DataMOF.emf}
 
 
  

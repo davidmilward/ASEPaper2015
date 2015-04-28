@@ -1,0 +1,37 @@
+@namespace(uri="http://cs.ox.ac.uk/se/
+DataMOF", prefix="dataMOF")
+package dataMOF;
+class Model {
+  attr String name;
+  val AbstractElement[*] elements;
+}
+class AbstractElement {
+  attr String name;
+}
+class Class extends AbstractElement {
+  ref Class superType;
+  val AbstractElement[*] elements;
+}
+class DataElement extends AbstractElement {
+  val ValueDomain[1] valuedomain;
+}
+class ValueDomain {
+  attr String name;
+  val DataElement[1] dataelement;
+  val ValueSpec[*] ValueSpec;
+}
+class ValueSpec {
+  attr String name;
+}
+class Rule extends ValueSpec {
+}
+class Enumeration extends ValueSpec {
+  val DataType[*] DataType;
+}
+class DataType extends ValueSpec {
+  val BasicType type;
+}
+class BasicType {
+  attr String typeName;
+}
+

@@ -1,0 +1,49 @@
+grammar uk.ac.ox.dataMof.DataMOF with org.eclipse.xtext.common.Terminals
+ 
+generate dataMOF "http://www.ac.uk/ox/dataMof/DataMOF"
+
+Model:
+	'model' name = QualifiedName '{'
+	(elements += AbstractElement)*
+	 '}'
+;  
+AbstractElement:
+	Class | DataElement 
+;
+QualifiedName:
+	ID ('.' ID)*
+;   
+Class:
+  'class' name = ID ('extends' superType = [Class ])? '{'
+	(elements += AbstractElement)*
+	 '}'
+;
+DataElement:
+  'dataelement' name = ID 
+  '{'
+     (valuedomain += ValueDomain)  
+  '}'
+;
+ValueDomain:
+  'valuedomain' name = ID 
+  ValueSpec += ValueSpec* 
+;
+ValueSpec:
+  '{'
+      Rule | Enumeration | DataType 
+  '}'
+;
+Rule:
+  'rule' name = ID 
+;
+Enumeration:
+  'enumeration' name = ID
+  '{'
+   DataType += DataType* 
+   '}'
+;
+DataType:
+  'datatype' name=ID ':' type=BasicType';'
+;
+BasicType:
+  typeName=('string'|'int'|'boolean');
