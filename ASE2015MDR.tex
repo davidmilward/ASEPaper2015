@@ -1,8 +1,8 @@
 \documentclass[conference]{IEEEtran}
 
 \ifCLASSINFOpdf
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \usepackage[pdftex]{graphicx, hyperref}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \usepackage{listings}
 \fi
 
@@ -12,13 +12,13 @@
 
 \begin{document} 
 
-\title{Model Driven Engineering for \\ Large-Scale Data Integration}
+\title{Model Driven Engineering for \\ Large-Scale Clinical Research}
 
 \vskip 4mm 
 
 \author{%
   \IEEEauthorblockN{Jim Davies, Jeremy Gibbons, David M.~Milward,
-    Seyyed Shah, Monika Solanki and James Welch%
+    Seyyed Shah, Monika Solanki, and James Welch%
   }
   % 
   \IEEEauthorblockA{%
@@ -34,34 +34,39 @@
 \maketitle
 
 \begin{abstract}
-  Large-scale data integration: combining data from heterogeneous
-  sources and providing users with a unified view.  More than that in
-  practice: it's not a single unified view, but one for each different
-  class of user, and for each of the usages that they have in mind.
-  Relies upon achieving semantic interoperability: in terms of the
-  data---it would be good to have some data that is actually
-  compatible---but also in terms of the metadata---if your data isn't
-  compatible with mine, fine, that's just the way it is, but I need to
-  know.  We are talking big data.  But our definition of big data is:
-  need more automation that we have, because it's too big to do this
-  manually, with the tools that we are using at present.  
-
-  Various aspects of the management of the data---specification,
-  collection, integration, presentation, application, and feedback to
-  specification again---are amenable to automation if we have a
-  description of the data that our tools can work with.  Sure, we want
-  metadata, but we want descriptive metadata.  We want data models.  
-
-  This paper reports upon the development and application of
-  supporting tools for automation of some of these aspects, assisting
-  domain experts and software engineers in achieving the kind of
-  large-scale data integration needed for effective translational
-  research.  It begins with an explanation of the modelling framework
-  required.  It describes the design and functionality of the tools,
-  based around the 'model catalogue'.  It reports upon the experience
-  of applying the tools in providing national support for large-scale
-  clinical research.  It sets out some lessons learned. 
+  Scientific progress in medicine is increasingly dependent upon the
+  large-scale integration of data from a range of sources.  This data
+  is acquired in different contexts, held in different systems, and
+  subject to different processes and constraints.  The value of the
+  integrated data relies upon common data points having a consistent
+  interpretation in each case; to achieve this at scale requires
+  appropriate informatics support.  This paper explains how a
+  model-driven approach to software engineering and data management,
+  in which software artefacts are generated automatically from data
+  models, can be used to achieve this.  It introduces a simple data
+  modelling language, consistent with standard object modelling
+  notations, together with a set of tools for model creation,
+  maintenance, and deployment.  It reports upon the application of
+  this approach in the provision of informatics support for two
+  large-scale clinical informatics initiatives.
 \end{abstract}
+
+% 
+  % Various aspects of the management of the data---specification,
+  % collection, integration, presentation, application, and feedback to
+  % specification again---are amenable to automation if we have a
+  % description of the data that our tools can work with.  Sure, we want
+  % metadata, but we want descriptive metadata.  We want data models.  
+
+  % This paper reports upon the development and application of
+  % supporting tools for automation of some of these aspects, assisting
+  % domain experts and software engineers in achieving the kind of
+  % large-scale data integration needed for effective translational
+  % research.  It begins with an explanation of the modelling framework
+  % required.  It describes the design and functionality of the tools,
+  % based around the 'model catalogue'.  It reports upon the experience
+  % of applying the tools in providing national support for large-scale
+  % clinical research.  It sets out some lessons learned. 
 
 \vskip 14mm
 
