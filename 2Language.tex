@@ -1,21 +1,14 @@
 \section{The Models Language and Architecture}
 % MS: This is a repeat of the content in the introduction
 
-In the past Data Dictionaries were used to store details of database record structure or application data structure on a local per application basis, a metadata registry provides a similar capability but on a system or organisation-wide basis. It also provides features that are commonly included in a \emph{Thesaurus}, a \emph{Taxonomy}, and an \emph{Ontology} . These features include the ability to classify terms in relation to one another, record relationships such as synonyms, and classify hierarchical relationships. Ontologies have proved effective in matching what we define as the first problem, that is how domain concepts can be matched, however they are quite unwieldy to use when tackling the second problem of how to match and manage different representations.
+In the past Data Dictionaries were used to store details of database record structure or application data structure on a local per application basis, a metadata registry provides a similar capability but on a system or organisation-wide basis. It also provides features that are commonly included in a \emph{Thesaurus}, a \emph{Taxonomy}, and an \emph{Ontology} . These features include the ability to classify terms in relation to one another, record relationships such as synonyms, and classify hierarchical relationships. Ontologies have proved effective in matching what we have defined as the first problem, that is how domain concepts can be matched, however they are quite unwieldy to use when tackling the second problem of how to match and manage different representations.
+
 
 Metadata Registries are normally found in Data Warehouses and Enterprise data mining systems, where vast quantities of data need to be administered and managed. It is likely that metadata registries will become more common as it becomes more and more necessary to deal with the recent internet-driven data explosion, especially as much of this data is unstructured, and can only be processed by relatively inefficient techniques.
 
 
 
-Metadata Registries are needed in organizations to ensure data consistency. Metadata Registries are capable of analysing, administering and classifying metadata and very often in practise they also function as repositories for metadata, storing the schema and blueprints for data types and structures. The ideas and concepts that are stored in data systems form the basis of executable software systems, however many of the details are peculiar to particular disciplines.  
-
-In the past Data Dictionaries were used to store details of database record structure or application data structure on a local per application basis, a metadata registry provides a similar capability but on a system or organisation-wide basis. It also provides features that are commonly included in a \emph{thesaurus}, a \emph{Taxonomy}, and an \emph{Ontology} . These features include the ability to classify terms in relation to one another, record relationships such as synonyms, and classify hierarchical relationships.
-
-Metadata Registries are normally found in Data Warehouses and Enterprise systems, where vast quantities of data need to be administered and managed. It is likely that metadata registries will become more common as it becomes more and more necessary to deal with the recent internet-driven data explosion, especially as much of this data is unstructured, and can only be processed by relatively inefficient techniques.
-
-Metadata Registries contain the ability to examine both how a data element is represented as well as what it means, and it is this relationship that is embodied in the International Standard 11179, which I will examine in the next section. There are other standards which purport to be concerned with metadata registries namely ISO15000-3 and ISO15000-4, which relate to ebXML, however they are more concerned with storing and accessing metadata rather than classifying it and relating the semantic and representational aspects of that metadata.
-
-This section takes key concepts from the ISO11179 standard and explores ways in which these concepts can be integrated with concepts and ideas embodied in the Meta-Object Facility (MOF) model-driven engineering standards in order to design a metadata registry, which will both serve the practical purpose of allowing datasets to be matched, compared and managed, and allow for the development of a unified treatment of data in heterogeneous systems. The first part looks at the ISO standard and the ideas behind MOF, the second takes these ideas and uses them as the foundation for a specification of a metadata registry. The third section looks at how the metadata registry can be used to provide basic services for data-oriented model driven programming. In later chapters the practical and theoretical problems are examined in detailed to see in what ways full automated semantic interoperability can be achieved.
+This section takes key concepts from the ISO11179 standard and explores ways in which these concepts can be integrated with concepts and ideas embodied in model-driven engineering principles in order to design a metadata registry, which will both serve the practical purpose of allowing datasets to be matched, compared and managed, and allow for the development of a unified treatment of data in heterogeneous systems. The first part looks at the ISO standard and the ideas behind MOF, the second takes these ideas and uses them as the foundation for a specification of a metadata registry. The third section looks at how the metadata registry can be used to provide basic services for data-oriented model driven programming. In later chapters the practical and theoretical problems are examined in detailed to see in what ways full automated semantic interoperability can be achieved.
 
 
 \subsection{ISO11179}
@@ -47,14 +40,10 @@ ISO11179 is the international standard relating to metadata and in particular me
 	\label{fig:overviewMDR}
 \end{figure}
 
-We can get some more hints as to the theory behind these guidelines in a related ISO standard \emph{ISO 20943-1: the standard relating to achieving consistency in meta-data registries)} which states that the data element concept may relate several data elements that record data about that concept with different representations, implying that a single data element concept may have many value domains. It would appear therefore that what is intended is that a common data element in ISO11179 is really a relationship, or mapping between the set of data element concepts and the set of value domains. Therefore a list of data elements as DEL can be represented as follows:
-\vskip 4mm
-\begin{axdef}DEL : DEC \rel VD\end{axdef}
-\vskip 4mm
-The relationship between DEC's and VD's can be viewed as a set of mappings. If we look at the mapping from VD to DEC then this is a mapping rather than a function, every VD must be related at least one DEC, but it could of course be related to more than one.  An Integer data-type in a programming language may be used to represent inches in a measurement program, it may also be used to count tanks in a logistics application. It is also likely that since we are representing concepts in a physical domain, which by definition has many more constraints acting on it there will always be a many DECs for every VD.
-A data element is said to be comprised of a data element concept(DEC) which is its meaning and a value domain(VD) which is its representation. But how exactly is this relationship built up? and how can it be replicated? 
-If we turn to the ISO standards we obtain these definitions:
-\vskip 4mm 
+We can get some more hints as to the theory behind these guidelines in a related ISO standard \emph{ISO 20943-1: the standard for consistency in meta-data registries)} which states that the data element concept may relate several data elements that record data about that concept with different representations, implying that a single data element concept may have many value domains. It would appear therefore that what is intended is that a common data element in ISO11179 is really a relationship, or mapping between the set of data element concepts and the set of value domains. 
+
+For example an Integer data-type in a programming language may be used to represent inches in a measurement program, it may also be used to count vehicles in a logistics application.  A data element is said to be comprised of a data element concept(DEC) which is its meaning and a value domain(VD) which is its representation.
+
 
 \begin{table}[h]
 	\begin{tabular}{ p{1.8cm} p{2.8cm}  p{3.0cm}  }  % centered columns (2 columns)
