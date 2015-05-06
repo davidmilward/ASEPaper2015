@@ -50,6 +50,29 @@ The Common Warehouse Metamodel (CWM) from the Object Management Group is a UML b
 %Seyyed: I’ll add some more here on meta model repositories and the MDE papers on metamodelling
 
 
+%%%%  ontological representations of ISO11179 %%%%%%%%
+
+Several efforts have addressed the representation of !SO11179 as
+ontological models for enabling data integration across metadata
+registries (MDRs). In \cite{Sinaci2013784} the authors describe a
+federated semantic metadata registry framework where CDE (Common Data
+Elements) are exposed as LOD resources. CDEs are described in RDF, can
+be queried and interlinked with CDEs in other registries using
+SKOS. An ISO1179 ontology has been defined as part of the framework
+and the Semantic MDR has been implemented using the Jena framework. In
+\cite{pmid25405066} the authors present the Clinical Data Element
+Ontology (CDEO) for unified indexing and retrieval of elements across
+MDRs. Concepts in CDEO have been organised and represented using
+SKOS. In \cite{pmid22211181} the authors present case studies for
+representing HL7 Detailed Clinical Models (DCMs) and the ISO11179
+model in OWL. A combination of UML diagrams and Excel spreadsheets
+were used to extract the metamodels for 14 HL7 DCM constructs. A
+critical limitation of this approach is that the transformation from
+metamodels to their ontological representation in OWL is based on a
+manual encoding.
+
+
+
 \subsection{Objectives}
 This paper is an experience paper showing the results obtained from applying Model Driven Engineering principles to data interoperability problems in two instances in the medical domain. In both cases the aims of the clinicians were similar, namely to integrate existing clinical trials data and to ensure that future artefacts, such as the forms used to capture datasets resulted in high data quality. 
 
