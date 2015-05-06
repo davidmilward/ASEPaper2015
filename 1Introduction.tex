@@ -45,14 +45,14 @@ The core ideas from the ISO11179 standard can be extracted to give us the notion
 
 Data warehousing provides support to model meta data towards reporting and analysis in the context of enterprise data systems. In data warehousing models of meta data are used extract data from separate business systems into a single data warehouse, for decision support. Data warehouse models can be arranged in normalised form, following a relational approach, or dimensional form as quantifiable \emph{facts} and \emph{dimensions} that denote the context of facts. Data warehousing relies on fixed data models and structures, which is in contrast to the more general approach taken in ISO 11179, where models are expected to change over time. 
 
-The Common Warehouse Metamodel (CWM) from the Object Management Group is a UML based standard to enable data warehousing in practice. However, as with data warehousing, CWM is focused on write-once models, and for working with rigidly structured data. The models and data warehouse structure in CWM are not intended to change after creation. The standard consists of 22 parts and the core meta model shares defines an equivalent to the \emph{concept} and \emph{value} elements of the ISO11179 meta model.
+The Common Warehouse Metamodel (CWM)~\cite{poole03} from the Object Management Group is a UML based standard to enable data warehousing in practice. However, as with data warehousing, CWM is focused on write-once models, and for working with rigidly structured data. The models and data warehouse structure in CWM are not intended to change after creation. The standard consists of 22 parts and the core meta model shares defines an equivalent to the \emph{concept} and \emph{value} elements of the ISO11179 meta model.
 
 %Seyyed: I’ll add some more here on meta model repositories and the MDE papers on metamodelling
 
 
 %%%%  ontological representations of ISO11179 %%%%%%%%
 
-Several efforts have addressed the representation of !SO11179 as
+Several efforts have addressed the representation of ISO11179 as
 ontological models for enabling data integration across metadata
 registries (MDRs). In \cite{Sinaci2013784} the authors describe a
 federated semantic metadata registry framework where CDE (Common Data
@@ -63,7 +63,7 @@ and the Semantic MDR has been implemented using the Jena framework. In
 \cite{pmid25405066} the authors present the Clinical Data Element
 Ontology (CDEO) for unified indexing and retrieval of elements across
 MDRs. Concepts in CDEO have been organised and represented using
-SKOS. In \cite[pmid22211181} the authors present case studies for
+SKOS. In \cite{pmid22211181} the authors present case studies for
 representing HL7 Detailed Clinical Models (DCMs) and the ISO11179
 model in OWL. A combination of UML diagrams and Excel spreadsheets
 were used to extract the metamodels for 14 HL7 DCM constructs. A
