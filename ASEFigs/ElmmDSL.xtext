@@ -1,0 +1,63 @@
+grammar uk.ox.ac.cs.elm.ElmDSL with org.eclipse.xtext.common.Terminals
+
+generate elmDSL "http://cs.ox.ox.uk/elm/ElmDSL"
+DataModel:
+	'datamodel' name = ID '{'
+	(elements += ConceptElement)*
+	 '}'
+	 (extensions += Extension)*
+;  
+ConceptElement:
+	DataClass | DataElement 
+;
+QualifiedName:
+	ID ('.' ID)*
+;   
+DataClass:
+  'dataclass' name = ID ('extends' superType = [DataClass ])? '{'
+	(elements += ConceptElement)*
+	(extensions += Extension)*
+	 '}'
+;
+DataElement:
+  'dataelement' name = ID 
+  '{'
+     (valuedomain += ValueDomain)
+     (extensions += Extension)*  
+  '}'
+;
+ValueDomain: 
+  'valuedomain' name = ID 
+  ValueSpec += ValueSpec* 
+  (extensions += Extension)*
+;
+ValueSpec:
+  '{'
+      (Rule | Enumeration | DataType)
+  '}'
+;
+Rule:
+  'rule' name = ID 
+;
+Enumeration:
+  'enumeration' name = ID
+  '{'
+   DataType += DataType* 
+   '}'
+;
+DataType:
+  'datatype' name=STRING ':' type=BasicType';'
+;
+BasicType:
+  typeName=('string'|'int'|'boolean'|'date')
+  ;
+  
+Extension:
+	'extension' key=ID ':' value=STRING ';'
+;
+ConceptDomain:
+	'conceptdomain' name=ID  '{'
+		(concepts += ValueDomain)*
+	'}'
+;
+	
