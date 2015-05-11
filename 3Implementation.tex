@@ -9,7 +9,7 @@ The front end user interface was implemented using a combination of HTML with Ja
 GORM was used as a persistence mechanism, with a MySQL relational database as storage, although different GORM adapters made it possible to attach NO SQL datastores such as Neo4J and MongoDB. The full architectural stack is shown in figure\ref{fig:ApplicationArchitectMDR}
 
 \begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ApplicationArchitect1}
+	\includegraphics[width=0.48\textwidth,natwidth=610,natheight=642]{ApplicationArchitect1}
 	\caption{Overview Architecture} 
 	\label{fig:ApplicationArchitectMDR}
 \end{figure}
@@ -18,9 +18,9 @@ The Grails/GORM framework enabled the Ecore model to generate the basic Grails D
 
 The internal domain model used a basic \emph{Catalogue Element} which was able to link elements via the \emph{relationship} and \emph{relationshipType} classes. The core language model discussed earlier has been enhanced to by allowing user-defined relationships to be added to the core model. Any catalogue element is able to be related to any other catalogue element through a relationship class, this relationship is constrained by the relationshipType object which can prevent different catalogue element types being related, so that a Model cannot directly be related to a say a Datatype Enumeration. Relationship types can be added to the Model dynamically, so that even though the relationship between a Model and Datatype enumeration is prevented initially, a new type could be introduced by an administrator or super user to add in that relationship. The EMF-based tools to automatically generate the whole Models Catalogue code-base using Groovy/Grails/Angular were not available at the start of the project, and although work has been undertaken to build such a toolkit it not yet complete.  
 
-
+The following subsections describe the basic use cases for the Model Catalogue, and how these use cases were implemented. 
 \subsection{Listing of DataModels}
-
+The key use case required in both projects was the ability to catalogue a set of data elements and data classes so that different schema could be compared and curated. Listing is currently carried out using a REST interface which is queried using an Angular client. Figure \ref{fig:treeviewOfDataModel}
 \begin{figure}[here]
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{DataModelTreeView}
 	\caption{Screen Shot of DataModel Listing} 
@@ -28,7 +28,7 @@ The internal domain model used a basic \emph{Catalogue Element} which was able t
 \end{figure}
 
 \subsection{selection of data elements for form generation}
-
+For many clinical users one of the key requirement was the ability to generate forms for clinical research which were generated form a single authorative source, and the ability to take data elements, manage them to build a form and then output either a form or an XML representation for use in another system, such as OpenClinica was key to the work carried out. Figure \ref{fig:treeviewOfDataModel} shows the interface for selecting and managing users selections of data elements and data classes.
 \begin{figure}[here]
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{DataElementSelection}
 	\caption{Screen Shot of Data Element Selection} 
@@ -37,7 +37,7 @@ The internal domain model used a basic \emph{Catalogue Element} which was able t
 
 
 \subsection{relationships between 2 DataModels}
-
+Very often different research groups will arrive at slightly different models for the same or very similar diseased, so another use case for the Models Catalogue was the ability to compare different Data Models, Data Classes and individual Data Elements. Figure \ref{fig:dataClassComparison}
 \begin{figure}[here]
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ComparisonOfDataClasses}
 	\caption{Screen Shot of DataClass Comparison} 
