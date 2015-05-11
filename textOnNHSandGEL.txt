@@ -1,0 +1,17 @@
+The UK's National Institute for Health Research (NIHR \cite{NIHR}) has
+sponsored the Health Informatics Collaborative (NHIC) which is backing
+a cross-trust programme involving 5 key NHS hospital trusts in the UK
+in order to set up a flexible and responsive governance framework,
+whereby research outcomes can rapidly be exploited by the NHS
+community. The work is currently limited to 5 clinical areas, but is
+expected in time to be extended. One of the aims of the programme is
+to develop tools and services for research, so that researchers and
+clinicians can have access to a wider cross Biomedical Research Centre
+(BRC) dataset. The programme has been working on developing a
+federated metadata registry, based on the ISO standard for metadata
+registries ISO11179\cite{ISO11179}, for use as a basis for data
+interoperability for research data from clinical trials but also with
+a view to integrating this capability with Electronic Patient Records
+(EPR) datastores within the trusts.
+
+Genomics England(GEL \cite{GEL}) is a company owned by the Department of Health and was set up to deliver the 100,000 Genomes Project.  This flagship project will sequence 100,000 whole genomes from NHS patients by 2017, the project has four main aims: a)to bring benefit to patients, b) to create an ethical and transparent programme based on consent, c) to enable new scientific discovery and medical insights, d) to kickstart the development of a UK genomics industry. The project is focusing on patients with rare diseases, and their families, as well as patients with common cancers.

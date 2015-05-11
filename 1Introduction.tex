@@ -1,68 +1,115 @@
 
-% MS: I found a couple of typos. Is someone resolving those otherwise I can do it.
 \section{Introduction}
 
-Data Quality and Data Integration are two major problems which are becoming critical for health care providers everywhere. Research data is held on different systems, in different locations and the data itself is heterogeneous, collected without a common syntax or semantics. Data quality within the enterprise is dependent on successfully managing heterogeneous data sources, and there are variety of approaches to solve the problems associated with data integration.   In this paper we show that the successful application of metadata registries combined with model driven engineering principles has been demonstrated to have a significant impact on both data quality and data interoperability within two major healthcare projects within the UK's National Health Service (NHS).
+Scientific progress in medicine consists principally in the
+introduction of new diagnostics and new therapeutics: new ways of
+figuring out what is wrong, and new ways of doing something about it.
+The causes of disease, the expression of symptoms, and the response to
+treatment, can be extremely complex, involving many levels of
+biology---genomics, proteomics, metabolomics---and a wide variety of
+lifestyle and environmental factors.
 
-The UK's National Institute for Health Research (NIHR \cite{NIHR}) has sponsored the Health Informatics Collaborative  (NHIC) which is backing a cross-trust programme involving 5 key NHS hospital trusts in the UK in order to set up a flexible and responsive governance framework, whereby research outcomes can rapidly be exploited by the NHS community. The work is currently limited to 5 clinical areas, but is expected in time to be extended. One of the aims of the programme is to develop tools and services for research, so that researchers and clinicians can have access to a wider cross Biomedical Research Centre (BRC) dataset. The programme has been working on developing a federated metadata registry, based on the ISO standard for metadata registries ISO11179\cite{ISO11179}, for use as a basis for data interoperability for research data from clinical trials but also with a view to integrating this capability with Electronic Patient Records (EPR) datastores within the trusts.
+To obtain the evidence to support the introduction of a new diagnostic
+or therapeutic, while taking account of the variations in biology and
+environment, we need to make detailed, comparable observations of a
+suitably large number of individuals.  These observations will be made
+by different people, under different circumstances, and stored and
+processed in different information systems.  A significant degree of
+coordination is required to achieve an adequate combination of detail
+and comparability.
 
-Genomics England(GEL \cite{GEL}) is a company owned by the Department of Health and was set up to deliver the 100,000 Genomes Project.  This flagship project will sequence 100,000 whole genomes from NHS patients by 2017, the project has four main aims: a)to bring benefit to patients, b) to create an ethical and transparent programme based on consent, c) to enable new scientific discovery and medical insights, d) to kickstart the development of a UK genomics industry. The project is focusing on patients with rare diseases, and their families, as well as patients with common cancers.
+One means of achieving this involves prior agreement upon a prescribed
+dataset: a precise specification of the observations needed to answer
+a particular question.  An information system is then implemented or
+configured to match this dataset, and staff are trained to acquire
+data to match the prescribed interpretation.  This can be
+time-consuming and expensive.  Furthermore, the data acquired is
+unlikely to be re-used: not only is the dataset as a whole tailored
+towards a particular question, but the same may be true of the
+individual observations.
 
+It should be clear that this is unnecessary.  A dataset can be
+composed by drawing upon, and adding to, a library of existing data
+definitions.  As a precise specification, it can be used as the basis
+for the automatic generation or configuration of an information system
+for data capture, reducing costs while enhancing the value of the data
+obtained.  The enhanced value comes in part from the fact that some of
+the data has been recorded against existing definitions, but also from
+the fact that definitions are readily available---in a re-usable,
+computable form---for all of the data collected.
 
-\subsection{Background}
+Costs can be further reduced, and scientific progress accelerated, by
+re-using data already collected: in other scientific studies; in the
+course of care delivery; or from other sources, including new sensor
+technologies.  Precise data definitions are important here also: we
+need to know whether the data already collected is fit for purpose,
+whether its interpretation is consistent with the analysis that we
+intend to perform.  In most cases, these definitions will be created
+retrospectively, by progressively adding information about the context
+of collection, and any subsequent processing, until the interpretation
+of the data is clear.
 
-Interoperability is major problem in electronic information systems in 2 (arguably) orthogonal respects, firstly that domain concepts and terms in multiple systems are used to mean slightly different things, and secondly that the same concept meaning in different systems very often are given a different representation, so that speed may be represented by an Integer value in one systems and by a Double in another system.
+Having created precise definitions for existing data, we can enhance
+the value of the data, and reduce the costs of research, by making
+these definitions available in a standardised, computable form.  In
+designing and proposing a new clinical study, researchers can take
+account not only of what questions have been asked before, but also of
+what data already exists, in other research databases or in clinical
+information systems.  In this way, we can eliminate unhelpful
+variation in study design and unnecessary duplication of effort in
+data collection.
 
-Metadata Registries are needed in organizations to ensure data consistency. Metadata Registries are capable of analysing, administering and classifying metadata and very often in practise they also function as repositories for metadata, storing the schema and blueprints for data types and structures. The ideas and concepts that are stored in data systems form the basis of executable software systems, however many of the details are peculiar to particular disciplines.  
+Furthermore, if we have both precise definitions of existing data, and
+precise definitions of data requirements for a study, then we can
+provide automatic support for aspects of study design and delivery:
+definitions can be compared, queries can be generated for data
+extraction, and---if summary metadata on the contents of existing
+databases is available---the feasibility of a particular study can be
+assessed in advance.
 
-Metadata Registries are normally found in Data Warehouses and Enterprise data mining systems, where vast quantities of data need to be administered and managed. It is likely that metadata registries will become more common as it becomes more and more necessary to deal with the recent internet-driven data explosion, especially as much of this data is unstructured, and can only be processed by relatively inefficient techniques.
+Scientific progress in medicine is increasingly dependent upon this
+kind of automatic support for data management and integration.
+Without it, we will be unable to assemble the evidence
+needed---detailed, comparable data on thousands or millions of
+individuals---to produce new insights, to validate new discoveries,
+and to support the introduction of new diagnostics and therapeutics
+into clinical practice.
 
-Metadata Registries contain the ability to examine both how a data element is represented as well as to record it means, and it is this relationship that is embodied in the International Standard 11179, which we will examine in the next section. There are other standards which are concerned with metadata registries namely ISO15000 (part 3 and 4)  which relates to ebXML, however they are more concerned with storing and accessing metadata rather than classifying it and relating the semantic and representational aspects of that metadata.
+\clearpage
 
-\subsection{Related Work}
-% MS: If this section is to be supported by two pages of references,
-% it needs its own space. This can be merged with section 3.
+This paper explains how a model-driven approach to software and data
+engineering can provide the support required for large-scale clinical
+research.  It introduces a simple data modelling language, consistent
+with standard object modelling notations, together with a set of tools
+for model creation, maintenance, and deployment.  It then reports upon
+the experience of applying these tools within two large-scale clinical
+research initiatives.
 
-State-of-the-art is the research electronic data capture (REDCap)~\cite{harr09} web-based application to support translational research. The tool support data capture for research studies providing an online interface for data entry, audit trails for tracking data, export to common statistical packages and data import from external sources. Like the Model Catalogue, the REDCap system focuses on the modes of clinical metadata. However, REDCap differs from the current Model Catalogue in two important aspects. Firstly, REDCap is a closed system, any data must be imported into and stored within the REDCap database, whereas the Model Catalogue aims to provide platform to create software for use in clinical environments. Secondly, the meta-data management (creation, revision, sharing) in REDCap is considered a specialist task, requiring modelling experts to initialise a REDCap installation per-study. Whereas in the Model Catalogue, clinical users have capability to adapt and modify the metadata as needed. Effectively, the Model Catalogue follows the same metadata workflow as REDCap, but without the need for modelling experts to adapt or change the meta data models. Because the Model Catalogue works at the meta-data level, it can be used to share similar models between organisations and to derive software artefacts directly from user created metadata models.
+One of these initiatives involves the re-use of data captured in
+existing clinical information systems.  In the area of translational
+research, in which new innovations are developed and evaluated in the
+context of clinical practice (`from bench to bedside'), the data
+needed to support the science is often the same as that needed to
+support high-quality care delivery and service improvement.  In
+existing clinical systems, however, the same observation may be
+recorded in many different ways, and there are significant
+challenges. 
 
+The other involves the development of new information systems for data
+acquisition and management, as well as the customisation and re-use of
+existing systems wherever possible.  Here, the emphasis is upon
+defining new, generic datasets, in specific therapeutic areas, with
+the aim of supporting a wide range of studies using the data
+collected.  A particular challenge for informatics development and
+data re-use stems from the constant updating of these datasets to take
+account of new knowledge, new constraints, and new objectives.
 
-Data warehousing~\cite{kim02} provides a framework for reporting and analysis tasks across disparate enterprise data systems, for decision support. In data warehousing meta data is modelled to extract information from business systems into a centralised data warehouse. The warehouse is used to create reports and analyse business performance. Data warehouse models can be arranged in normalised form, following the relational approach~\cite{inm92}, or `dimensional’ form~\cite{kim02} as quantifiable \emph{facts} and \emph{dimensions} which denote the context of facts. Data warehousing relies on fixed data models and structures, which is in contrast to the more general approach taken in ISO11179, where models are expected to change over time. 
-
-The Common Warehouse Metamodel (CWM)~\cite{poole03} from the Object Management Group is a UML based framework to enable data warehousing in practice. However, as with data warehousing, CWM is focused on write-once models, and for working with rigidly structured data. The models and data warehouse structure in CWM are not intended to change after creation and data is copied into the data warehouse from separate systems. The standard consists of 22 parts and the core meta model has overlap with the the \emph{concept} and \emph{value} elements of the ISO11179 meta model.
-
-
-
-
-%%%%  ontological representations of ISO11179 %%%%%%%%
-
-Several efforts have addressed the representation of ISO11179 as
-ontological models for enabling data integration across metadata
-registries (MDRs). In \cite{Sinaci2013784} the authors describe a
-federated semantic metadata registry framework where CDE (Common Data
-Elements) are exposed as LOD resources. CDEs are described in RDF, can
-be queried and interlinked with CDEs in other registries using
-SKOS. An ISO1179 ontology has been defined as part of the framework
-and the Semantic MDR has been implemented using the Jena framework. In
-\cite{pmid25405066} the authors present the Clinical Data Element
-Ontology (CDEO) for unified indexing and retrieval of elements across
-MDRs. Concepts in CDEO have been organised and represented using
-SKOS. In \cite{pmid22211181} the authors present case studies for
-representing HL7 Detailed Clinical Models (DCMs) and the ISO11179
-model in OWL. A combination of UML diagrams and Excel spreadsheets
-were used to extract the metamodels for 14 HL7 DCM constructs. A
-critical limitation of this approach is that the transformation from
-metamodels to their ontological representation in OWL is based on a
-manual encoding.
-
-%%%% Ontology repositories %%%%%%%%%
-
-Ontology repositories can be considered analogous to model catalogues
- they provide the infrastructure for storing, interlinking, querying and visualising 
-
-\subsection{Objectives}
-This paper is an experience paper showing the results obtained from applying Model Driven Engineering principles to data interoperability problems in two instances in the medical domain. In both cases the aims of the clinicians were similar, namely to integrate existing clinical trials data and to ensure that future artefacts, such as the forms used to capture datasets resulted in high data quality. 
-
-To measure data quality we looked at how the data forms used in capturing information conformed to the standards relating to the datasets used, in particular was the terminology uniform, did captured data elements mean the same thing, and did equivalent data elements capture the same values across different systems.
-
-
-The paper is split into 5 sections, this section introduces the problem and gives an overview of the work, the next section looks at the core language or model used, section 3 deals with the implem   entation details, section 4 details the experience gained, in essence the results achieved and section 5 concludes.
+Together, these initiatives provide an initial validation of the
+approach.  The software tools are in use by clinical researchers,
+rather than the software engineers responsible for their design.  Data
+is being collected to the definitions that they have produced, using
+software that they have generated.  It is too early to undertake any
+quantitative, comparative evaluation; however, it is our hope that a
+report of the approach taken, and the experience gained thus far, will
+be useful to those working in the field of automated software
+engineering.

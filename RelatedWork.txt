@@ -1,0 +1,58 @@
+
+\subsection{Background}
+
+Interoperability is major problem in electronic information systems in 2 (arguably) orthogonal respects, firstly that domain concepts and terms in multiple systems are used to mean slightly different things, and secondly that the same concept meaning in different systems very often are given a different representation, so that speed may be represented by an Integer value in one systems and by a Double in another system.
+
+Metadata Registries are needed in organizations to ensure data consistency. Metadata Registries are capable of analysing, administering and classifying metadata and very often in practise they also function as repositories for metadata, storing the schema and blueprints for data types and structures. The ideas and concepts that are stored in data systems form the basis of executable software systems, however many of the details are peculiar to particular disciplines.  
+
+Metadata Registries are normally found in Data Warehouses and Enterprise data mining systems, where vast quantities of data need to be administered and managed. It is likely that metadata registries will become more common as it becomes more and more necessary to deal with the recent internet-driven data explosion, especially as much of this data is unstructured, and can only be processed by relatively inefficient techniques.
+
+Metadata Registries contain the ability to examine both how a data element is represented as well as to record it means, and it is this relationship that is embodied in the International Standard 11179, which we will examine in the next section. There are other standards which are concerned with metadata registries namely ISO15000 (part 3 and 4)  which relates to ebXML, however they are more concerned with storing and accessing metadata rather than classifying it and relating the semantic and representational aspects of that metadata.
+
+\subsection{Related Work}
+% MS: If this section is to be supported by two pages of references,
+% it needs its own space. This can be merged with section 3.
+
+State-of-the-art is the research electronic data capture (REDCap)~\cite{harr09} web-based application to support translational research. The tool support data capture for research studies providing an online interface for data entry, audit trails for tracking data, export to common statistical packages and data import from external sources. Like the Model Catalogue, the REDCap system focuses on the modes of clinical metadata. However, REDCap differs from the current Model Catalogue in two important aspects. Firstly, REDCap is a closed system, any data must be imported into and stored within the REDCap database, whereas the Model Catalogue aims to provide platform to create software for use in clinical environments. Secondly, the meta-data management (creation, revision, sharing) in REDCap is considered a specialist task, requiring modelling experts to initialise a REDCap installation per-study. Whereas in the Model Catalogue, clinical users have capability to adapt and modify the metadata as needed. Effectively, the Model Catalogue follows the same metadata workflow as REDCap, but without the need for modelling experts to adapt or change the meta data models. Because the Model Catalogue works at the meta-data level, it can be used to share similar models between organisations and to derive software artefacts directly from user created metadata models.
+
+
+Data warehousing~\cite{kim02} provides a framework for reporting and analysis tasks across disparate enterprise data systems, for decision support. In data warehousing meta data is modelled to extract information from business systems into a centralised data warehouse. The warehouse is used to create reports and analyse business performance. Data warehouse models can be arranged in normalised form, following the relational approach~\cite{inm92}, or `dimensional’ form~\cite{kim02} as quantifiable \emph{facts} and \emph{dimensions} which denote the context of facts. Data warehousing relies on fixed data models and structures, which is in contrast to the more general approach taken in ISO11179, where models are expected to change over time. 
+
+The Common Warehouse Metamodel (CWM)~\cite{poole03} from the Object Management Group is a UML based framework to enable data warehousing in practice. However, as with data warehousing, CWM is focused on write-once models, and for working with rigidly structured data. The models and data warehouse structure in CWM are not intended to change after creation and data is copied into the data warehouse from separate systems. The standard consists of 22 parts and the core meta model has overlap with the the \emph{concept} and \emph{value} elements of the ISO11179 meta model.
+
+
+
+
+%%%%  ontological representations of ISO11179 %%%%%%%%
+
+Several efforts have addressed the representation of ISO11179 as
+ontological models for enabling data integration across metadata
+registries (MDRs). In \cite{Sinaci2013784} the authors describe a
+federated semantic metadata registry framework where CDE (Common Data
+Elements) are exposed as LOD resources. CDEs are described in RDF, can
+be queried and interlinked with CDEs in other registries using
+SKOS. An ISO1179 ontology has been defined as part of the framework
+and the Semantic MDR has been implemented using the Jena framework. In
+\cite{pmid25405066} the authors present the Clinical Data Element
+Ontology (CDEO) for unified indexing and retrieval of elements across
+MDRs. Concepts in CDEO have been organised and represented using
+SKOS. In \cite{pmid22211181} the authors present case studies for
+representing HL7 Detailed Clinical Models (DCMs) and the ISO11179
+model in OWL. A combination of UML diagrams and Excel spreadsheets
+were used to extract the metamodels for 14 HL7 DCM constructs. A
+critical limitation of this approach is that the transformation from
+metamodels to their ontological representation in OWL is based on a
+manual encoding.
+
+%%%% Ontology repositories %%%%%%%%%
+
+Ontology repositories can be considered analogous to model catalogues
+ they provide the infrastructure for storing, interlinking, querying and visualising 
+
+\subsection{Objectives}
+This paper is an experience paper showing the results obtained from applying Model Driven Engineering principles to data interoperability problems in two instances in the medical domain. In both cases the aims of the clinicians were similar, namely to integrate existing clinical trials data and to ensure that future artefacts, such as the forms used to capture datasets resulted in high data quality. 
+
+To measure data quality we looked at how the data forms used in capturing information conformed to the standards relating to the datasets used, in particular was the terminology uniform, did captured data elements mean the same thing, and did equivalent data elements capture the same values across different systems.
+
+
+The paper is split into 5 sections, this section introduces the problem and gives an overview of the work, the next section looks at the core language or model used, section 3 deals with the implem   entation details, section 4 details the experience gained, in essence the results achieved and section 5 concludes.
