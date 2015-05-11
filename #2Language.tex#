@@ -2,8 +2,10 @@
 
 A dataset for clinical research will consist of a list of data items,
 organised into different subsets.  A subset may correspond to number
-of data items that are collected together, perhaps on a single
-`case report form', or are otherwise related. 
+of data items that are collected together, in a single transaction or
+observation.  This may represent the completion of a `case report
+form' in a study, or the report of a particular event: for example,
+the results of a clinical test, or an account of 
  
 \subsection{Models Catalogue}
 
