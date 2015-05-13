@@ -2,7 +2,7 @@
  
 
 
-A software \emph{model} is an abstraction of a software program, which will be instantiated and run using \emph{real data}, software modelling is becoming important for a number of reasons, not least that it enables developers the opportunity to \emph{re-use} code. The Unified Modelling Language UML \cite{UML} or the Eclipse Modelling Framework core \cite{ECORE} ( a subset of UML) are in widespread use for defining and representing software \emph{models}. UML and Ecore are defined at a level which is \emph{more abstract} than the model itself, and one which we term the \emph{meta-modelling} layer. 
+A software \emph{model} is an abstraction of a software program, which will be instantiated and run using \emph{real data}, software modelling is becoming important for a number of reasons, not least that it enables developers the opportunity to \emph{re-use} code. The Unified Modelling Language UML \cite{UML} or the Eclipse Modelling Framework core ~\cite{ECORE} ( a subset of UML) are in widespread use for defining and representing software \emph{models}. UML and Ecore are defined at a level which is \emph{more abstract} than the model itself, and one which we term the \emph{meta-modelling} layer. 
 
 The data we have been dealing with in these projects is mostly in the form of textual forms, sometimes in word or PDF format, sometimes in a more specialised form of XML or Excel. The data therefore does have a clear structure, although the clinician running the trial very often has little visibility, knowledge or appreciation of how the data is stored, and who else might in future want to access or manipulate that data.  Although the healthcare providers have work-flows which the patients and doctors follow in the treatment cycle, these are not being considered in this paper.
 
@@ -49,15 +49,15 @@ Conceptual domains comprise sets of value domains, they provide a collection mec
 
 
 
-\subsection{A Language for Enterprise Meta-Modelling and Architecture(LEMMA) }
+\subsection{A Language for Data Meta-Modelling }
 
-The ISO11179 specification illustrates different aspects of the standard using UML class diagrams, and we have used these to inform the development of a very simple domain specific language for metadata, which we are calling the \emph{Language for Enterprise Metadata Modelling and Architecture}. The next section gives a description of the language and highlights how it differs from the meta-model outlined in the standard. Probably the key changes are that we have added in containers to handle data element collections, calling these \emph{DataClasses} and to handle collections of these \emph{DataClasses} which we have introduced entities called \emph{DataModels}.
+The ISO11179 specification illustrates different aspects of the standard using UML class diagrams, and we have used these to inform the development of a very simple domain specific language for metadata modelling.The next section gives a description of the language and highlights how it differs from the meta-model outlined in the standard. Probably the key changes are that we have added in containers to handle data element collections, calling these \emph{DataClasses} and to handle collections of these \emph{DataClasses} which we have introduced entities called \emph{DataModels}.
 
-A simplified overview model, without attributes and methods, showing the Ecore model for the LEMMA DSL is shown in Figure \ref{fig:mcSimplifiedOverview}.
+A simplified overview model, without attributes and methods, showing the Ecore model for this DSL is shown in Figure \ref{fig:mcSimplifiedOverview}.
 %%------------REDO-----------------------%%
 \begin{figure}[here]
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ELM_EcoreDiagram}
-	\caption{Overview of LEMMA in Ecore} 
+	\caption{Overview of Metamodel} 
 	\label{fig:mcSimplifiedOverview}
 \end{figure}
 
@@ -78,15 +78,15 @@ A \emph{ValueSpec} can be a simple datatype, an enumeration of datatypes, or a r
 The original dataset was collected and managed in Excel, as shown in Figure \ref{fig:excelCOSD}
 
 \begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{COSDExcel}
-	\caption{COSD data in Excel Format} 
+	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{COSDExcelS}
+	\caption{COSD Datamodel in Excel Format} 
 	\label{fig:excelCOSD}
 \end{figure}
-The ElmDSL is used to represent a model for Cancer data (part of the Cancer Outcomes and Services Dataset ~\cite{COSD}) in Figure \ref{fig:elmcosd}
+The DSL is used to represent a model for Cancer data (part of the Cancer Outcomes and Services Dataset ~\cite{COSD}) in Figure \ref{fig:elmcosd}
 
 \begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{COSDinLEMMAModel}
-	\caption{COSD data in LEMM Model} 
+	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{MCCOSDModelS}
+	\caption{COSD Datamodel in DSL} 
 	\label{fig:elmcosd}
 \end{figure}
 
