@@ -1,6 +1,7 @@
 \section{The Models Catalogue Language and Architecture}
  
-\subsection{Software Modelling}
+
+
 A software \emph{model} is an abstraction of a software program, which will be instantiated and run using \emph{real data}, software modelling is becoming important for a number of reasons, not least that it enables developers the opportunity to \emph{re-use} code. The Unified Modelling Language UML \cite{UML} or the Eclipse Modelling Framework core \cite{ECORE} ( a subset of UML) are in widespread use for defining and representing software \emph{models}. UML and Ecore are defined at a level which is \emph{more abstract} than the model itself, and one which we term the \emph{meta-modelling} layer. 
 
 The data we have been dealing with in these projects is mostly in the form of textual forms, sometimes in word or PDF format, sometimes in a more specialised form of XML or Excel. The data therefore does have a clear structure, although the clinician running the trial very often has little visibility, knowledge or appreciation of how the data is stored, and who else might in future want to access or manipulate that data.  Although the healthcare providers have work-flows which the patients and doctors follow in the treatment cycle, these are not being considered in this paper.
@@ -9,7 +10,14 @@ Sometimes there are standards available governing aspects of the data in questio
 
 Thus there are two things we need to identify and reference in building the toolkit, firstly does this \emph{concept} \textbf{mean} the same as that \emph{concept}, and secondly does this \emph{concept} have the same \emph{representation} as that concept. The way in which we can match up concepts in software engineering is by associated them with classes of software objects, and then defining methods which can reference them. 
 
-\subsection{ISO11179}
+\subsection{Model Driven Software Development}
+......
+%%------------NEW STUFF-----------------------%%
+
+%%------------Meta-levels Diagram-----------------------%%
+
+
+\subsection{Metadata and ISO11179}
 ISO11179 is the international standard relating to metadata and in particular metadata registries. It forms the basis of the design of the models catalogue toolkit.
 
 \begin{figure}[here]
@@ -46,7 +54,7 @@ Conceptual domains comprise sets of value domains, they provide a collection mec
 The ISO11179 specification illustrates different aspects of the standard using UML class diagrams, and we have used these to inform the development of a very simple domain specific language for metadata, which we are calling the \emph{Language for Enterprise Metadata Modelling and Architecture}. The next section gives a description of the language and highlights how it differs from the meta-model outlined in the standard. Probably the key changes are that we have added in containers to handle data element collections, calling these \emph{DataClasses} and to handle collections of these \emph{DataClasses} which we have introduced entities called \emph{DataModels}.
 
 A simplified overview model, without attributes and methods, showing the Ecore model for the LEMMA DSL is shown in Figure \ref{fig:mcSimplifiedOverview}.
-
+%%------------REDO-----------------------%%
 \begin{figure}[here]
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ELM_EcoreDiagram}
 	\caption{Overview of LEMMA in Ecore} 
@@ -66,19 +74,6 @@ A Value Domain is the domain in which the data element is represented, it can co
 A \emph{ValueSpec} can be a simple datatype, an enumeration of datatypes, or a rule - such as a regular expression - which defines the way in which a series of characters is formed into a string attribute. 
 
 
-\lstinputlisting[
-	label=elm,basicstyle=\tiny,caption=Language for Enterprise Modelling
-	]
-	{ASEFigs/ElmmDSL.xtext}
-
-
-The ElmDSL is used to represent a model for Cancer data (part of the Cancer Outcomes and Services Dataset \cite(COSD)) in Figure \ref{fig:elmcosd}
-
-\begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ElmDSLCOSDModel}
-	\caption{COSD data in LEMM Model} 
-	\label{fig:elmcosd}
-\end{figure}
 
 The original dataset was collected and managed in Excel, as shown in Figure \ref{fig:excelCOSD}
 
@@ -87,5 +82,20 @@ The original dataset was collected and managed in Excel, as shown in Figure \ref
 	\caption{COSD data in Excel Format} 
 	\label{fig:excelCOSD}
 \end{figure}
+The ElmDSL is used to represent a model for Cancer data (part of the Cancer Outcomes and Services Dataset ~\cite{COSD}) in Figure \ref{fig:elmcosd}
+
+\begin{figure}[here]
+	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{COSDinLEMMAModel}
+	\caption{COSD data in LEMM Model} 
+	\label{fig:elmcosd}
+\end{figure}
+
+
+
+\subsection{Forms and Automatic Software Generation}
+
+%%------------NEW STUFF-----------------------%%
+
+........
 
 
