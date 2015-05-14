@@ -1,24 +1,122 @@
-\section{The Models Catalogue Language and Architecture}
- 
+\section{Data Models and Metadata}
+
+\subsection{Data models}
+
+A dataset definition for clinical research will consist of a number of
+different parts, each of which declares a set of related data items.
+Typically, this will be a set of data items that would be collected
+together: in the completion of a `case report form' in a study, or in
+the report of a clinical event.  These parts may be `repeating', in
+that there may be more than one form of that type completed, or more
+than one event of that type reported upon.  
+
+A data item declaration should explain not only the name under which
+values are to be stored, but also the type of those values.  If the
+type is numeric, then the unit of measurement should be given.  If the
+type is an enumeration, then the intended interpretation of each value
+should be explained.  Finally, the parts of the dataset may be
+connected or related to one another, and these relationships may have
+constrained multiplicities.
+
+It should be clear that a dataset definition can be represented as a
+class diagram or object model.  Data items can be introduced as
+attributes, parts of the model as classes, and relationships between
+classes as associations---complete with multiplicities.  Data types
+and enumerations can be used to support attribute declarations, and
+hence data item definitions; constraints can be used to express range
+restrictions and intended relationships between data items.
+
+Class diagrams can be used also to provide precise definitions for
+data sources: existing clinical systems or research databases.  These
+systems may be implemented using a combination of technologies but,
+assuming that the value of the data justifies the effort required,
+precise object models can be created to describe the interfaces that
+they might present for data re-use. 
+
+\subsection{Models as metadata}
+
+Having constructed precise object models to describe datasets and data
+sources, we can use them as a basis for automated software and data
+engineering.  This involves the use of models as metadata in three
+respects: for software artefacts that are generated or configured; for
+data that these artefacts store or process; and for other models,
+capturing relationships between data points declared in different
+models, and hence the data stored or processed against them.
+
+For the first of these, we need only maintain the relationship between
+the implementation and the model that was used to generate or
+configure it.  If the model is stored in a repository or \emph{model
+  catalogue} and published, then we have only to create a link between
+the implementation and this published instance.  This link may be
+created automatically in the case where the model is generated,
+partially or completely, from an existing implementation: for example,
+from the schema of a relational database.
+
+For the second, a link must be created between each data point, or
+collection of data points, and the corresponding declaration in the
+data model.  The model catalogue then requires some support for the
+language in which the data model is expressed, sufficient to support
+the creation and manipulation of links to specific components: in
+particular, to specific classes and attributes.  If the data is
+acquired or processed using a software implementation for which a data
+model has already been registered, then that model may provide a basis
+for the automatic creation of a link to the corresponding declaration.
+
+For the third, we need the same ability to create and manipulate links
+between components of different models.  Instead of links between
+model and implementation, however, we have links representing
+different kinds of relationships: provenance and re-use of model
+components; versioning of models; and, most importantly,
+\emph{semantic relationships} between attributes or
+classes---assertions that one attribute or class has the same meaning
+or interpretation as another.  This is precisely the information
+needed to support automation in data discovery, integration, and
+re-use.
+
 \subsection{Models Catalogue}
-A software \emph{model} is an abstraction of a software program, which will be instantiated and run using \emph{real data}, software modelling is becoming important for a number of reasons, not least that it enables developers the opportunity to \emph{re-use} code. The Unified Modelling Language UML \cite{UML} or Ecore \cite{ECORE} ( a subset of UML) are in widespread use for defining and representing software \emph{models}. UML and Ecore are defined at a level which is \emph{more abstract} than the model itself, and one which we term the \emph{meta-modelling} layer. 
 
-The data we have been dealing with in these projects is mostly in the form of textual forms, sometimes in word or PDF format, sometimes in a more specialised form of XML or Excel. The data therefore does have a clear structure, although the clinician running the trial very often has little visibility, knowledge or appreciation of how the data is stored, and who else might in future want to access or manipulate that data.  Although the healthcare providers have work-flows which the patients and doctors follow in the treatment cycle, these are not being considered in this paper.
+A software \emph{model} is an abstraction of a software program, which
+will be instantiated and run using \emph{real data}, software
+modelling is becoming important for a number of reasons, not least
+that it enables developers the opportunity to \emph{re-use} code. The
+Unified Modelling Language UML \cite{UML} or Ecore \cite{ECORE} ( a
+subset of UML) are in widespread use for defining and representing
+software \emph{models}. UML and Ecore are defined at a level which is
+\emph{more abstract} than the model itself, and one which we term the
+\emph{meta-modelling} layer.
 
-Sometimes there are standards available governing aspects of the data in question, for instance reporting of a particular clinical trial may need to be in XML which conforms to a particular XSD, however that doesn't mean that the data has been collected with that particular standard in mind.  For the most part clinicians are interested in fairly static data sets, a patient record, the results of a treatment, a clinical trial form, the dynamic aspects are less important, at any rate in terms of the computational representation. What is important is the meaning of the data once it is captured, and in particular how it relates to other data in the same field, for instance is \emph{tumour weight} in one experiment the same as \emph{tumour weight} in another. These two terms may be used in different contexts, for instance prostate cancer and liver cancer, and they may be represented by different values domain in different hospital trusts, for instance one may use grams the other kilograms, the values may be comparable but an adjustment will need to be made to make that comparison.
-
-Thus there are two things we need to identify and reference in building the toolkit, firstly does this \emph{concept} \textbf{mean} the same as that \emph{concept}, and secondly does this \emph{concept} have the same \emph{representation} as that concept. The way in which we can match up concepts in software engineering is by associated them with classes of software objects, and then defining methods which can reference them. 
+Thus there are two things we need to identify and reference in
+building the toolkit, firstly does this \emph{concept} \textbf{mean}
+the same as that \emph{concept}, and secondly does this \emph{concept}
+have the same \emph{representation} as that concept. The way in which
+we can match up concepts in software engineering is by associated them
+with classes of software objects, and then defining methods which can
+reference them.
 
 \subsection{ISO11179}
-ISO11179 is the international standard relating to metadata and in particular metadata registries. It forms the basis of the design of the models catalogue toolkit.
+
+ISO11179 is the international standard relating to metadata and in
+particular metadata registries. It forms the basis of the design of
+the models catalogue toolkit.
 
 \begin{figure}[here]
-	\includegraphics[width=0.48\textwidth,natwidth=610,natheight=642]{BasicISO}
-	\caption{Core model for ISO11179 Metadata Registry} 
-	\label{fig:basicMDR}
+  \includegraphics[width=0.48\textwidth,natwidth=610,natheight=642]{BasicISO}
+  \caption{Core model for ISO11179 Metadata Registry} 
+  \label{fig:basicMDR}
 \end{figure}
 
-The ISO11179 standard uses the notion of a \emph{data element concept}, \emph{a data element}, \emph{a value domain}, and a \emph{conceptual domain}. The standard currently confines itself to the detailed level of concepts and data elements and has no notion of collections of data elements or data element concepts, but instead attaches two attributes: an \emph{object class} and a \emph{property} to each data element concept and these attributes allow the data element concept's to be aggregated or classified. This core model of the ISO11179 is illustrated in figure \ref{fig:basicMDR}. The data element concept and conceptual domain entities belong to the \emph{conceptual level}  whilst the common data element and value domain both belong to the \emph{representational level}.
+The ISO11179 standard uses the notion of a \emph{data element
+  concept}, \emph{a data element}, \emph{a value domain}, and a
+\emph{conceptual domain}. The standard currently confines itself to
+the detailed level of concepts and data elements and has no notion of
+collections of data elements or data element concepts, but instead
+attaches two attributes: an \emph{object class} and a \emph{property}
+to each data element concept and these attributes allow the data
+element concept's to be aggregated or classified. This core model of
+the ISO11179 is illustrated in figure \ref{fig:basicMDR}. The data
+element concept and conceptual domain entities belong to the
+\emph{conceptual level} whilst the common data element and value
+domain both belong to the \emph{representational level}.
 
 
 For example an Integer data-type in a programming language may be used to represent inches in a measurement program, it may also be used to count vehicles in a logistics application.  A data element is said to be comprised of a data element concept(DEC) which is its meaning and a value domain(VD) which is its representation.
