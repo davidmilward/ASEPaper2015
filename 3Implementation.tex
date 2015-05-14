@@ -27,6 +27,40 @@ The key use case required in both projects was the ability to catalogue a set of
 	\label{fig:treeviewOfDataModel}	
 \end{figure}
 
+\subsection{forms}
+
+Typically the initial data models are entity-centric: for example
+cancer models are initally built around the entities of
+\emph{Patient}, \emph{Tumour}, etc.  Forms are typically structured around
+events: \emph{Registration}, \emph{Surgery}, etc.  We construct
+separate models for forms, re-using the elements from the
+entity-centric model, thus providing a different view upon the same
+data.  (As as aside, the Patient Pathway models interact with these
+forms models, providing a workflow, ordering form completion).
+
+With respect to forms, we take an approach analagous to that of the
+Model-Driven Architecture~\cite{MDA-proposal}: that of
+Platform-Specific Models (PSMs) and Platform-Independent models
+(PIMs).  Our platform-independent model in this regard is based on the
+emerging ISO standard for forms~\cite{ISOForms}.  This provides
+structure in terms of \emph{sections}, \emph{sub-sections},
+\emph{repeating groups}, and so on, but is not specific to any
+particular implementation.  The model is based on previous work on
+domain-specific languages for forms~\cite{Abler2011}.
+
+Our initial platform-specific target is \emph{OpenClinica}, a tool for
+supporting data capture for clinical trials.  OpenClinica forms are
+created using a model supplied in Excel Spreadsheet format.
+
+Our generation of XML schema may also be seen as a platform-specific
+implementation of the forms model.  XML schema are used to define
+message structures, and have a similar structure to the OpenClinica
+forms, although typically additional data is required in XML schema -
+context such as the patient for which the data is about, or the person
+submitting the data; or linking information which may be automatically
+created during manual input into a web interface. 
+
+
 \subsection{selection of data elements for form generation}
 For many clinical users one of the key requirement was the ability to generate forms for clinical research which were generated form a single authorative source, and the ability to take data elements, manage them to build a form and then output either a form or an XML representation for use in another system, such as OpenClinica was key to the work carried out. 
 
