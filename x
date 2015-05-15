@@ -121,11 +121,9 @@ country.
 
 The results of the whole genome sequencing will be linked to detailed
 information on each participant: clinical and laboratory information
-drawn from health records, ontological statements regarding abnormal
-features or conditions, and additional information obtained from the
-participant or their representatives.  The information asked for will
-depend upon the nature of the disease that the patient is suffering
-from.  For example, 
+drawn from patient records, ontological statements regarding abnormal
+features or conditions, and contextual information obtained from the
+patient themselves.
 
 
 
