@@ -23,14 +23,14 @@
 
 \bibitem{UML}
 \BIBentryALTinterwordspacing
-OMG. Unified modelling language. [Online]. Available:
-  \url{http://www.uml.org//}
+OMG. {U}nified {M}odelling {L}anguage. [Online]. Available:
+  \url{http://www.uml.org}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ECORE}
 \BIBentryALTinterwordspacing
 Eclipse. (2008) Ecore tools. [Online]. Available:
-  \url{http://eclipse.org/ecoretools/}
+  \url{http://eclipse.org/ecoretools}
 \BIBentrySTDinterwordspacing
 
 \bibitem{EMF}
@@ -50,15 +50,12 @@ J.~Davies, J.~Gibbons, R.~Calinescu, C.~Crichton, S.~Harris, and A.~Tsui,
   plus 0.5em minus 0.4em\relax Springer, 2012, pp. 21--38.
 
 \bibitem{Abler2011}
-\BIBentryALTinterwordspacing
 D.~Abler, C.~Crichton, J.~Davies, S.~Harris, and J.~Welch, ``Models for
   forms,'' \emph{Proceedings of the 11th Workshop on Domain-Specific Modeling},
-  October 2011. [Online]. Available:
-  \url{http://www.dsmforum.org/events/DSM11/}
-\BIBentrySTDinterwordspacing
+  October 2011.
 
 \bibitem{kunz09}
-I.~Kunz, M.-C. Lin, and L.~Frey, ``Metadata mapping and reuse in cabig™,''
+I.~Kunz, M.-C. Lin, and L.~Frey, ``Metadata mapping and reuse in ca{BIG},''
   \emph{BMC Bioinformatics}, vol.~10, no. Suppl 2, p.~S4, 2009.
 
 \bibitem{koma08}
@@ -104,13 +101,13 @@ H.~Leroux, S.~McBride, L.~Lefort, M.~Kemp, and S.~Gibson, ``A method for the
 \bibitem{LOV}
 \BIBentryALTinterwordspacing
 Linked {O}pen {V}ocabularies. [Online]. Available:
-  \url{http://lov.okfn.org/dataset/lov/}
+  \url{http://lov.okfn.org/dataset/lov}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Stanbol}
 \BIBentryALTinterwordspacing
 Apache {S}tanbol. [Online]. Available:
-  \url{https://stanbol.apache.org/docs/trunk/components/ontologymanager/}
+  \url{https://stanbol.apache.org/docs/trunk/components/ontologymanager}
 \BIBentrySTDinterwordspacing
 
 \bibitem{kim02}
@@ -133,7 +130,7 @@ J.~Davies, J.~Gibbons, J.~Welch, and E.~Crichton, ``Model-driven engineering of
   Programming}, vol. 89B, pp. 88--104, September 2014.
 
 \bibitem{ragh08}
-W.~Raghupathi and A.~Umar, ``Exploring a model-driven architecture (mda)
+W.~Raghupathi and A.~Umar, ``Exploring a model-driven architecture ({MDA})
   approach to health care information systems development,''
   \emph{International Journal of Medical Informatics}, vol.~77, no.~5, pp.
   305--314, 2008.
@@ -152,13 +149,10 @@ A.~Khambati, J.~Grundy, J.~Warren, and J.~Hosking, ``Model-driven development
   2008, pp. 467--470.
 
 \bibitem{schl15}
-\BIBentryALTinterwordspacing
 H.~Schlieter, M.~Burwitz, O.~Sch{\"o}nherr, and M.~Benedict, ``Towards model
   driven architecture in health care information system development,'' in
   \emph{12th International Conference on Wirtschaftsinformatik (WI 2015)},
-  March 2015. [Online]. Available:
-  \url{http://www.wi2015.uni-osnabrueck.de/Files/WI2015-D-14-00264.pdf}
-\BIBentrySTDinterwordspacing
+  March 2015.
 
 \bibitem{pay12}
 P.~R. Payne, ``Biomedical knowledge integration,'' \emph{PLoS Computational
@@ -167,7 +161,7 @@ P.~R. Payne, ``Biomedical knowledge integration,'' \emph{PLoS Computational
 \bibitem{MDHT}
 \BIBentryALTinterwordspacing
 Model driven health tools. [Online]. Available:
-  \url{https://www.projects.openhealthtools.org/sf/projects/mdht/}
+  \url{https://www.projects.openhealthtools.org/sf/projects/mdht}
 \BIBentrySTDinterwordspacing
 
 \bibitem{doli06}
@@ -190,7 +184,7 @@ P.~Scott and R.~Worden, ``Semantic mapping to simplify deployment of {HL7} v3
 \bibitem{catalyst}
 \BIBentryALTinterwordspacing
 {University of Washington}. Catalyst web tools. [Online]. Available:
-  \url{http://catalyst.washington.edu/web\_tools/index.html}
+  \url{http://catalyst.washington.edu/web\_tools}
 \BIBentrySTDinterwordspacing
 
 \bibitem{harr09}
@@ -221,5 +215,10 @@ H.~Leroux, S.~McBride, and S.~Gibson, ``On selecting a clinical trial
   management system for large scale, multi-centre, multi-modal clinical
   research study,'' \emph{Studies in Health Technology and Informatics}, vol.
   168, pp. 89--95, 2011.
+
+\bibitem{MDAWarmer}
+J.~Warmer and A.~Kleppe, \emph{The {O}bject {C}onstraint {L}anguage: Getting
+  Your Models Ready for {MDA}}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax
+  Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc., 2003.
 
 \end{thebibliography}

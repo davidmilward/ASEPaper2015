@@ -8,51 +8,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ASEPub.bib
-Warning--I didn't find a database entry for "MDAWarmer"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 34 entries,
+You've used 35 entries,
             4039 wiz_defined-function locations,
-            1010 strings with 13421 characters,
-and the built_in function-call counts, 22982 in all, are:
-= -- 1803
-> -- 594
-< -- 175
-+ -- 312
-- -- 110
-* -- 1078
-:= -- 3486
-add.period$ -- 67
-call.type$ -- 34
-change.case$ -- 32
-chr.to.int$ -- 381
-cite$ -- 34
-duplicate$ -- 1694
-empty$ -- 1884
-format.name$ -- 134
-if$ -- 5259
+            1012 strings with 13472 characters,
+and the built_in function-call counts, 23349 in all, are:
+= -- 1819
+> -- 605
+< -- 177
++ -- 316
+- -- 112
+* -- 1088
+:= -- 3523
+add.period$ -- 69
+call.type$ -- 35
+change.case$ -- 33
+chr.to.int$ -- 387
+cite$ -- 35
+duplicate$ -- 1734
+empty$ -- 1937
+format.name$ -- 137
+if$ -- 5352
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 319
-newline$ -- 147
-num.names$ -- 29
-pop$ -- 814
+int.to.str$ -- 35
+missing$ -- 325
+newline$ -- 146
+num.names$ -- 30
+pop$ -- 837
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1757
+skip$ -- 1783
 stack$ -- 0
-substring$ -- 898
-swap$ -- 1334
+substring$ -- 904
+swap$ -- 1352
 text.length$ -- 48
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 34
+type$ -- 35
 warning$ -- 0
-while$ -- 96
-width$ -- 36
-write$ -- 351
-(There was 1 warning)
+while$ -- 98
+width$ -- 37
+write$ -- 352

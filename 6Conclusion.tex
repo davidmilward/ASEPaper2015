@@ -25,7 +25,9 @@ model-driven approach.
 processes of model creation and maintenance mediated by software
 engineers is problematic: there may be misunderstandings regarding
 interpretation, but---more importantly---there are not enough software
-engineers to go around.  
+engineers to go around.  An appropriate user interface, that closely
+matches the intuition and expectations of domain experts, is
+essential.
 
 \textsl{There will be more models than you think}.  Different models
 will be required for different types of implementation, and---in any
@@ -38,12 +40,12 @@ complex dependencies between data concepts and constraints.  A
 considerable degree of automation is required if users are to cope
 with this complexity.  
 
-For example, the model catalogue and the associated toolset should, as
+The model catalogue and the associated toolset should, as
 far as possible, automatically: create or propose links, including
 classifications; manage model versioning, and the consequences for
 linked data concepts; manage dependencies, including those between
 different models for same dataset, targeted at different
-implementation platforms.
+implementation platforms.  
 
 This should come as no surprise.  If, as Warmer and
 Kleppe~\cite{MDAWarmer} suggest, the model-driven approach is about
@@ -51,6 +53,24 @@ Kleppe~\cite{MDAWarmer} suggest, the model-driven approach is about
 merely as design languages'' then we should aim to provide modellers
 with the same kind of support that programmers have come to expect
 from modern integrated development environments.
+
+\subsection{Future development}
+
+The development of the language, the catalogue, and the associated
+toolset continues apace.  The existing interface, shown in
+Figure~\ref{fig:webinterface} is being refined and extended in
+collaboration with experts from a wider range of application domains.
+The degree of automatic support for model management is increasing:
+for example, Figure~\ref{fig:variation} shows how the toolset is able
+to automatically detect and present variations between related models.
+
+Furthermore, as well as models to support the acquisition and
+integration of data, we require data models for the processes of
+analysis, in terms of: the datasets used, the workflows enacted, and
+thus the provenance and reproducibility of the results obtained.
+Here, again, a considerable degree of automation is required if we are
+to meet the needs and expectations of those engaged in large-scale
+clinical research. 
 
 \clearpage
 
