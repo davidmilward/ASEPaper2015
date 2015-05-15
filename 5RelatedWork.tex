@@ -1,101 +1,6 @@
 
 \section{Related Work}
 
-\subsection{Electronic data capture}
-
-A range of tools are available for clinical Electronic Data Capture
-(EDC), including Catalyst Web Tools~\cite{catalyst},
-OpenClinica~\cite{oc}, REDCap~\cite{harr09}, LabKey~\cite{labk} and
-Caisis~\cite{cais}. Franklin \textit{et~al.}~\cite{fran11} present
-a two-year case-study comparing EDC tools, 
-and Leroux \textit{et~al.}~\cite{lero11} report on
-a further study comparing Clinical Trials Management Systems. 
-We use the Model Catalogue tool to generate
-case report forms for OpenClinica, but in principle any EDC tool could be
-supported. 
-
-The state of the art in EDC is represented by the Research Electronic Data
-Capture (REDCap)~\cite{harr09} web-based application, which
-supports metadata capture for research studies, providing an online
-interface for data entry, audit trails, export to common statistical
-packages and data import from external sources. Like the Model
-Catalogue, the REDCap system focuses on the clinical
-metadata. However, REDCap and similar EDC tools are typically 
-insular systems, importing any data into a centralised data silo;
-in contrast, the Model
-Catalogue aims to provide a platform to support and integrate 
-existing data stores
-and systems within the clinical environment.
-
-There is also a distinction in the level of expertise expected to operate
-the tools. The metadata management --- creation, revision, sharing~--- in
-EDC is typically considered a IT-specialist task~\cite{harr09,fran11}, requiring
-experts to initialise the metadata separately for each study. With the Model
-Catalogue, clinical domain specialists have the ability to adapt and modify
-metadata as needed, and treat models as the central
-artefacts. Effectively, the Model Catalogue follows the same metadata
-workflow as REDCap, but without the need for modelling experts to
-develop, adapt or share the metadata models. 
-
-%REDCap, unlike the
-%Model Catalogue, is not open source so users cannot freely modify the
-%functionality of the system. The Model Catalogue, can be modified to
-%add features and support to maximise the utility of the
-%models. Because the Model Catalogue works at the meta-data level,
-%users can share similar models between organisations and derive new
-%software artefacts from user created metadata models.
-
-\subsection{Model-driven engineering for e-Health}
-
-Several examples of model-driven engineering for e-Health software are
-reported in the literature~\cite{dav14,ragh08,blob07,kham08,schl15}.
-Payne~\cite{pay12} formalises the typical pattern followed in these
-methods: a multi-phase approach, where data modelling is a separate
-phase from stakeholder engagement and data integration. This approach
-is taken Khambati \textit{et~al.}~\cite{kham08}, where an
-Eclipse-based tool is used to develop domain-specific languages to
-model and generate tools for mobile health-tracking applications. The
-advantage of the approach is the ability it provides for clinicians to
-modify the model of the study, which is specified in the DSL, and
-automatically regenerate the application from the model. A similar
-approach is taken in the \emph{True Colours} system~\cite{dav14},
-using the Booster model-driven toolkit to derive a patient
-self-monitoring application for mental health. The Booster approach
-demonstrates the lesson that data tends to be managed better within a
-model-driven process, leading to higher quality and more reusable
-assets.  Schlieter \textit{et~al.}~\cite{schl15} record their
-experience gained from using model-driven engineering to implement an
-application for path-based stroke care; amongst the lessons learned,
-they recommend using existing ontological models where possible, and
-being prepared to reconcile a heterogeneity of models from the various
-stakeholders under a common metamodel.  In contrast to these systems,
-our metadata-oriented approach supports the creation of applications
-that can interoperate with existing data, standards and
-systems. Rather than simply using MDE to develop stand-alone systems,
-MDE processes are used in the management of clinical trials metadata
-from which software is derived.
-
-In the Model Driven Health Tools (MDHT)~\cite{MDHT} project, the HL7
-Clinical Document Architecture (CDA) standard~\cite{doli06} for
-managing patient records is implemented using Eclipse UML
-tools~\cite{EUML}. The benefits of applying MDE
-are clear: modelling tools are used to model the CDA standards, and
-interoperable implementations of the standard are automatically
-derived from the models. In principle, this is similar to 
-our Model Catalogue approach, where the CDA metadata can be represented and
-implementations derived. However, MDHT supports only the CDA standard,
-whereas the Model Catalogue can interoperate with any metadata
-standard. The CDA standards are large and complex: 
-Scott and Worden~\cite{sco12} advocate a
-model-driven approach to simplify the HL7 CDA,
-supported by three case studies: the NHS England `Interoperability
-Toolkit', simplification of US CDA documents, and the Common
-Assessment Framework project for health and care providers in
-England. The Model Catalogue supports
-similar simplifications, where large and complex metadata schemes are
-simplified by mapping only relevant metadata in the generated
-artefacts.
-
 \subsection{ISO11179}
 
 The work described in this paper has evolved from the CancerGrid
@@ -198,4 +103,99 @@ is in contrast to the more general approach taken in ISO11179, where
 models are expected to evolve and change over time. 
 The core metamodel of the CWM standard overlaps with the 
 \emph{concept} and \emph{value} elements of the ISO11179 meta model.
+
+\subsection{Model-driven engineering for e-Health}
+
+Several examples of model-driven engineering for e-Health software are
+reported in the literature~\cite{dav14,ragh08,blob07,kham08,schl15}.
+Payne~\cite{pay12} formalises the typical pattern followed in these
+methods: a multi-phase approach, where data modelling is a separate
+phase from stakeholder engagement and data integration. This approach
+is taken Khambati \textit{et~al.}~\cite{kham08}, where an
+Eclipse-based tool is used to develop domain-specific languages to
+model and generate tools for mobile health-tracking applications. The
+advantage of the approach is the ability it provides for clinicians to
+modify the model of the study, which is specified in the DSL, and
+automatically regenerate the application from the model. A similar
+approach is taken in the \emph{True Colours} system~\cite{dav14},
+using the Booster model-driven toolkit to derive a patient
+self-monitoring application for mental health. The Booster approach
+demonstrates the lesson that data tends to be managed better within a
+model-driven process, leading to higher quality and more reusable
+assets.  Schlieter \textit{et~al.}~\cite{schl15} record their
+experience gained from using model-driven engineering to implement an
+application for path-based stroke care; amongst the lessons learned,
+they recommend using existing ontological models where possible, and
+being prepared to reconcile a heterogeneity of models from the various
+stakeholders under a common metamodel.  In contrast to these systems,
+our metadata-oriented approach supports the creation of applications
+that can interoperate with existing data, standards and
+systems. Rather than simply using MDE to develop stand-alone systems,
+MDE processes are used in the management of clinical trials metadata
+from which software is derived.
+
+In the Model Driven Health Tools (MDHT)~\cite{MDHT} project, the HL7
+Clinical Document Architecture (CDA) standard~\cite{doli06} for
+managing patient records is implemented using Eclipse UML
+tools~\cite{EUML}. The benefits of applying MDE
+are clear: modelling tools are used to model the CDA standards, and
+interoperable implementations of the standard are automatically
+derived from the models. In principle, this is similar to 
+our Model Catalogue approach, where the CDA metadata can be represented and
+implementations derived. However, MDHT supports only the CDA standard,
+whereas the Model Catalogue can interoperate with any metadata
+standard. The CDA standards are large and complex: 
+Scott and Worden~\cite{sco12} advocate a
+model-driven approach to simplify the HL7 CDA,
+supported by three case studies: the NHS England `Interoperability
+Toolkit', simplification of US CDA documents, and the Common
+Assessment Framework project for health and care providers in
+England. The Model Catalogue supports
+similar simplifications, where large and complex metadata schemes are
+simplified by mapping only relevant metadata in the generated
+artefacts.
+
+\subsection{Electronic data capture}
+
+A range of tools are available for clinical Electronic Data Capture
+(EDC), including Catalyst Web Tools~\cite{catalyst},
+OpenClinica~\cite{oc}, REDCap~\cite{harr09}, LabKey~\cite{labk} and
+Caisis~\cite{cais}. Franklin \textit{et~al.}~\cite{fran11} present
+a two-year case-study comparing EDC tools, 
+and Leroux \textit{et~al.}~\cite{lero11} report on
+a further study comparing Clinical Trials Management Systems. 
+We use the Model Catalogue tool to generate
+case report forms for OpenClinica, but in principle any EDC tool could be
+supported. 
+
+The state of the art in EDC is represented by the Research Electronic Data
+Capture (REDCap)~\cite{harr09} web-based application, which
+supports metadata capture for research studies, providing an online
+interface for data entry, audit trails, export to common statistical
+packages and data import from external sources. Like the Model
+Catalogue, the REDCap system focuses on the clinical
+metadata. However, REDCap and similar EDC tools are typically 
+insular systems, importing any data into a centralised data silo;
+in contrast, the Model
+Catalogue aims to provide a platform to support and integrate 
+existing data stores
+and systems within the clinical environment.
+
+There is also a distinction in the level of expertise expected to operate
+the tools. The metadata management --- creation, revision, sharing~--- in
+EDC is typically considered a IT-specialist task~\cite{harr09,fran11}, requiring
+experts to initialise the metadata separately for each study. With the Model
+Catalogue, clinical domain specialists have the ability to adapt and modify
+metadata as needed, and treat models as the central
+artefacts. Effectively, the Model Catalogue follows the same metadata
+workflow as REDCap, but without the need for modelling experts to
+develop, adapt or share the metadata models. 
+
+%REDCap, unlike the
+%Model Catalogue, is not open source so users cannot freely modify the
+%functionality of the system. The Model Catalogue, can be modified to
+%add features and support to maximise the utility of the
+%models. Because the Model Catalogue works at the meta-data level,
+%users can share similar models between organisations and derive new
+%software artefacts from user created metadata models.
 

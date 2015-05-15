@@ -87,7 +87,7 @@ were created from scratch, rather than being generated.  There were
 many requests for changes to the schemas; these proved difficult to
 track and coordinate.
 
-The exploration exercise itself was reported by adding columns to the
+The exploration exercise was reported by adding columns to the
 distributed versions of the candidate dataset spreadsheets, listing
 the information systems containing the data points in question, or
 suggested alternatives where there were significant differences due to
@@ -114,11 +114,10 @@ maintaining the datasets as data models, in the catalogue.
 The UK Department of Health, through the NIHR and the National Health
 Service (NHS), is providing funding for the whole genome sequencing of
 blood and tissue samples from patients with cancer, rare disorders,
-and infectious disease.  A network of regional Genomic Medicine
-Centres (GMCs) is being established to collect samples and data, and
-to provide access to genomic medicine across the whole of the
-country.  The funding committed to date is approximately \pounds
-300m. 
+and infectious disease.  A network of regional centres is being
+established to collect samples and data, and to provide access to
+genomic medicine across the whole of the country.  The funding
+committed to date is approximately \pounds 300m.
 
 The results of the whole genome sequencing will be linked to detailed
 information on each participant: clinical and laboratory information
@@ -175,138 +174,39 @@ updated, then the fact that the others may now be inconsistent will be
 flagged to the user.  
 
 The same linkage is made with regard to existing reporting datasets
-and clinical audits.  To avoid unnecessary duplication of effort, the
-reporting datasets for the genomic medicine program have been aligned
-with these activities.  The existing datasets have been modelled, and
+and clinical audits.  To avoid duplication of effort, the reporting
+datasets for the genomic medicine programme have been aligned with
+these activities.  The existing datasets have been modelled, and
 updates to them will be tracked in the catalogue: again, potential
-inconsistencies can be flagged. 
+inconsistencies can be flagged.
 
-The degree of data definition re-use facilitated by the model
-catalogue 
-
-Two initial tasks in the GE where to assemble datamodels for Cancer and for Rare Diseases. Although these models are still being developed we can report back the facts that to date the new datamodels have been built with a significant amount of re-use as illustrated in the following four tables.
-
-\begin{table}[h]
-	\caption{Cancer Data Model : Data-Element Re-use}
-	\begin{tabular}{ p{2.8cm} p{1.8cm}  p{1.8cm}   }  % centered columns (3 columns)
-		\hline
-		DataModel Name &  Elements & \%  \\ 
-		\hline
-		COSD & 60 & 28.45 \% \\
-		NHS Data Dictionary & 12 & 5.7 \% \\
-		SACT & 2 & 0.95 \% \\
-		New & 137 & 64.9 \% \\
-		\hline
-		TOTAL & 211
-	\end{tabular}
-\end{table}
+The degree of data definition re-use facilitated by the model is
+promising.  Table~\ref{table:reuse} shows the percentage of data
+definitions in the core cancer models developed for the genomic
+medicine programme that could be drawn from the two main, national
+cancer reporting datasets---the Cancer Outcomes and Services Dataset
+(COSD) and the Systemic Anti-Cancer Therapy dataset (SACT)---or from
+the standard NHS data dictionary.
 
 \begin{table}[h]
-		\caption{Cancer Data Model : Value Domain / Datatype Re-use}
-	\begin{tabular}{p{2.8cm} p{1.8cm}  p{1.8cm}     }  % centered columns (3 columns)
-		\hline
-		Source & Value Domains& \%  \\ 
-		\hline
-		NHS Standards & 28 & 20.44\\
-		XSD Standard datatypes & 62 & 45.26 \\
-		New datatypes & 47 & 34.31 \\
-		\hline
-		TOTAL & 137
-	\end{tabular}
+  \caption{Data definition re-use for cancer models}
+  \label{table:reuse}
+  \begin{tabular}{lrr}
+    \hline
+    Source &  Data Elements & \%  \\ 
+    \hline
+    Cancer Outcomes and Services Reporting  & 60 & 28.45 \% \\
+    Systemic Anti-Cancer Therapy Reporting & 2 & 0.95 \% \\
+    NHS Data Dictionary & 12 & 5.7 \% \\
+    New Definitions & 137 & 64.9 \% \\
+    \hline
+    TOTAL & 211
+  \end{tabular}
 \end{table}
 
-\begin{table}[h]
-	\caption{Rare Diseases Data Model : Data-Element Re-use}
-	\begin{tabular}{ p{2.8cm} p{1.8cm}  p{1.8cm}   }  % centered columns (3 columns)
-		\hline
-		DataModel Name &  Elements & \%  \\ 
-		\hline
-		NHIC & 41 & 10.96 \% \\
-		NHS Data Dictionary & 46 & 12.3 \% \\
-		New & 287 & 76.74 \% \\
-		\hline
-		TOTAL & 374
-	\end{tabular}
-\end{table}
+The degree of data definition re-use for rare disease is slightly
+lower than this, although still promising.  There is no existing
+national reporting or registry activity for many of the rare disease
+areas, and the datasets used by individual research programmes are not
+readily available.   
 
-\begin{table}[h]
-	\caption{Rare Diseases Data Model : Value Domain / Datatype Re-use}
-	\begin{tabular}{ p{2.8cm} p{1.8cm}  p{1.8cm}      }  % centered columns (3 columns)
-		\hline
-		Source & Value Domains& \%  \\ 
-		\hline
-		NHS Standards & 81 & 28.22\\
-		XSD Standard datatypes & 143 & 49.83 \\
-		New datatypes & 63 & 21.95 \\
-		\hline
-		TOTAL & 137
-	\end{tabular}
-\end{table}
-
-These figures are a snap-shop of the work in progress, however they are able to illustrate the rate of data element re-use, and of value domain datatype re-use. Both DataModels show an above 20 \% re-use rate for data elements, rising to above 65 \% for the datatypes. The results are significant and indicate that the re-use of both data elements and value types is significant part of the development of disease datamodels, having a model driven toolkit which can assemble a new datamodel and compare it in detail has clearly benefited the clinicians who are now using it.  We admit that the results are not the result of any experiment we have set up to prove the value of the toolkit, but they do strongly support the value of applying model-driven engineering principles in this domain. The time to assemble a new datamodel has been cut from months to weeks as a result of having a single shared source for the datamodel, and having the means to electronically comment on and discuss datamodel development in real time. Unique IRI's identifying each datamodel, dataclass, dataelement and valuedomain mean that searching for entities is fast, comparison between entities is clear and unambiguous, and generating output which conforms to agreed standards becomes straightforward.
-
-
-
-<<<<<<< HEAD
-=======
-
-
-% ----------------------------------------------------------------------
-
->>>>>>> origin/master
-\section{Lessons actually learned?}
-
-\begin{itemize}
-\item metadata registries are not enough - you need models - (we
-  should include examples  of how data elements are contextualised -
-  Keith slides) - 
-\item these models should be linked to the implementation, for
-  otherwise it is too expensive to maintain them
-\item the models should be readable as data manuals - literate
-  modelling - it simply doesn't work to have to click on attributes to
-  understand their meaning and derivation 
-\item this readability applies to the development interface, this is
-  the interface that you want to use (can't do the turn time) - and
-  you need to be able to pair program with domain experts
-\item you want inheritance within models, and include/import across
-  models (start thinking of the models as code, although this is about
-  managing information in general - managing declarations - it is
-  coincidental that we are generating artefacts from them)
-\item you may want different types of model for different generated
-  artefacts---depending upon what, exactly, is in the generator code
-  as parameters and additional information---it may be the same set of
-  data points overall, but you might well have a different refactoring
-  in Fowler terms
-\item version and store the generation code (!)
-\item tag the generated artefacts with a link back to the model
-  catalogue (XML schemas in HIC!)
-\item you will want more models than you think: for example, consider
-  the model of a clinical test; now think about how it is dropped into
-  a pathway; you need the pathway model to tell you what the dataset
-  means; it has added further context to the data element definitions
-  (you could flatten this, but that's bad)
-\item automate aspects of model management---versioning and dealing
-  with multiple models
-  \begin{itemize}
-  \item automatically create (and propose) links, including
-    classifications
-  \item have links for new version of (sequential), refactoring of
-    (parallel), derived from (data concepts across models), same as
-    (strong assertion)
-  \item use links in model maintenance - note that the definition that
-    this was derived from has changed
-  \item have publication cycle---a published model is for life
-  \end{itemize}
-\item general lesson: if you want to manage data semantics, you need a
-  compositional approach---none of this central coordination of a
-  single data dictionary, none of this single hierarchy of data
-  elements, none of this element by element description (all the
-  context in the text of the element definition?  doesn't work!)
-\item general lesson: if you are going to manage data at scale, you
-  need data model driven approach
-\item general lesson: if you have a model driven approach (data model
-  or otherwise) then your management of models has all the same
-  challenges as management of source code (you need an IDE) - really,
-  if you are using models as programs, then you need to support them
-  as programs
-\end{itemize}
