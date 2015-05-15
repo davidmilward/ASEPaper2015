@@ -6,6 +6,10 @@
 \usepackage{listings}
 \fi
 
+\ifpdf
+\graphicspath{{ASEFigs/}}
+\fi
+
 \usepackage{zed} % version 4 included in directory
 
 \newtheorem{definition}{Definition}
@@ -17,28 +21,15 @@
 \vskip 4mm 
 
 \author{%
-	\IEEEauthorblockN{Jim Davies, Jeremy Gibbons, David Milward,\\
-		Seyyed Shah, Monika Solanki, and James Welch%
-	}
+  \IEEEauthorblockN{Jim Davies, Jeremy Gibbons, Adam Milward, David Milward,\\
+    Seyyed Shah, Monika Solanki, and James Welch%
+  }
 	% 
 	\IEEEauthorblockA{%
 		Department of Computer Science, University of Oxford \\
 		Email: \texttt{Firstname.Lastname@cs.ox.ac.uk}
 	}
-	\and
-	\IEEEauthorblockN{Adam Milward}
-	\IEEEauthorblockA{Genomics England \\
-		London EC1M 6BQ\\
-		Email: adam.milward@genomicsengland.co.uk}
 }
-
-
-
-
-
-\ifpdf
-\graphicspath{{ASEFigs/}}
-\fi
 
 \maketitle
 
@@ -60,10 +51,6 @@
   large-scale clinical research initiatives.
 \end{abstract}
 
-\vskip 14mm
-
-\noindent
-
 \input{1Introduction.tex}
 \input{2Language.tex}
 \input{3Implementation.tex}
@@ -71,9 +58,7 @@
 \input{5RelatedWork.tex}
 \input{6Conclusion.tex}
  
-
-
-\newpage
+\clearpage
 
 \bibliographystyle{IEEEtran}
 
