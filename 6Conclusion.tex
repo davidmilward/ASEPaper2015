@@ -11,14 +11,15 @@ clinical research informatics has led to the following suggestions.
 definitions does not support re-use at scale: it requires the user to
 place all of the contextual information into the definition of each
 data item, and mitigates against the automatic generation and
-application of definitions.  Instead, we require a model catalogue, in
-which every data element or class is defined in context.
+application of definitions.  Instead, a compositional approach is
+required, in which data elements are defined in explicit context.
 
 \textsl{A catalogue is not enough}.  The models in the catalogue must
 be linked to implementations, and to each other, with a considerable
 degree of automatic support.  If the models are out of sync with the
 implementations, and with the data, then their value is sharply
-diminished.  Model-driven engineering is needed.
+diminished.  If you are going to manage data at scale, you need a data
+model-driven approach. 
 
 \textsl{The tools must be usable by domain experts}. To have the
 processes of model creation and maintenance mediated by software
@@ -26,52 +27,29 @@ engineers is problematic: there may be misunderstandings regarding
 interpretation, but---more importantly---there are not enough software
 engineers to go around.  
 
-\textsl{Many of the familiar} 
+\textsl{There will be more models than you think}.  Different models
+will be required for different types of implementation, and---in any
+research domain, at least---data models will be constantly evolving,
+with data being collected against different versions.  
 
- this readability applies to the development interface, this is
-  the interface that you want to use (can't do the turn time) - and
-  you need to be able to pair program with domain experts
-\textsl{A} you want inheritance within models, and include/import across
-  models (start thinking of the models as code, although this is about
-  managing information in general - managing declarations - it is
-  coincidental that we are generating artefacts from them)
-\textsl{B} you may want different types of model for different generated
-  artefacts---depending upon what, exactly, is in the generator code
-  as parameters and additional information---it may be the same set of
-  data points overall, but you might well have a different refactoring
-  in Fowler terms
-\textsl{C} version and store the generation code (!)
-\textsl{D} tag the generated artefacts with a link back to the model
-  catalogue (XML schemas in HIC!)
-\textsl{E} you will want more models than you think: for example, consider
-  the model of a clinical test; now think about how it is dropped into
-  a pathway; you need the pathway model to tell you what the dataset
-  means; it has added further context to the data element definitions
-  (you could flatten this, but that's bad)
-\textsl{F} automate aspects of model management---versioning and dealing
-  with multiple models
-  \begin{itemize}
-  \item automatically create (and propose) links, including
-    classifications
-  \item have links for new version of (sequential), refactoring of
-    (parallel), derived from (data concepts across models), same as
-    (strong assertion)
-  \item use links in model maintenance - note that the definition that
-    this was derived from has changed
-  \item have publication cycle---a published model is for life
-  \end{itemize}
-\textsl{G} general lesson: if you want to manage data semantics, you need a
-  compositional approach---none of this central coordination of a
-  single data dictionary, none of this single hierarchy of data
-  elements, none of this element by element description (all the
-  context in the text of the element definition?  doesn't work!)
-\textsl{H} general lesson: if you are going to manage data at scale, you
-  need data model driven approach
-\textsl{I} general lesson: if you have a model driven approach (data model
-  or otherwise) then your management of models has all the same
-  challenges as management of source code (you need an IDE) - really,
-  if you are using models as programs, then you need to support them
-  as programs
+\textsl{Intelligent, automatic support is essential}. The information
+content of precise data models is considerable, and there may be
+complex dependencies between data concepts and constraints.  Modellers
+need 
+
+For example, the model catalogue and the associated toolset should, as
+far as possible: automatically create or propose links, including
+classifications; manage model versioning, and the consequences for
+linked data concepts; manage dependencies, including those between
+different models for same dataset, targeted at different
+implementation platforms. 
+
+This should come as no surprise.  If, as Warmer and
+Kleppe~\cite{MDAWarmer} suggest, the model-driven approach is about
+``using modelling languages as programming languages rather than
+merely as design languages'' then we should aim to provide modellers
+with the same kind of support that programmers have come to expect
+from modern integrated development environments.
 
 \clearpage
 
