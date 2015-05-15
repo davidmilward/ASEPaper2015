@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.7)  15 MAY 2015 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.7)  15 MAY 2015 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,24 +404,35 @@ Underfull \hbox (badness 1648) in paragraph at lines 38--45
 []\OT1/ptm/m/n/10 Having con-structed pre-cise ob-ject mod-els to de-scribe
  []
 
-[2]) (./3Implementation.tex
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 19.
 
+LaTeX Warning: Citation `UML' on page 2 undefined on input line 82.
+
+
+LaTeX Warning: Citation `ECORE' on page 2 undefined on input line 82.
+
+[2]) (./3Implementation.tex
+
+LaTeX Warning: Citation `EMF' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Citation `ECORE' on page 3 undefined on input line 10.
+
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 19.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-<ASEFigs/languageExtensionExample.pdf, id=119, 384.43625pt x 221.82875pt>
+<ASEFigs/languageExtensionExample.pdf, id=95, 384.43625pt x 221.82875pt>
 File: ASEFigs/languageExtensionExample.pdf Graphic file (type pdf)
 
 <use ASEFigs/languageExtensionExample.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ASEFigs/modelCatalogueContents.pdf, id=120, 477.785pt x 228.855pt>
+<ASEFigs/modelCatalogueContents.pdf, id=96, 477.785pt x 228.855pt>
 File: ASEFigs/modelCatalogueContents.pdf Graphic file (type pdf)
 
 <use ASEFigs/modelCatalogueContents.pdf>
-<ASEFigs/11179metamodel.pdf, id=123, 250.9375pt x 144.54pt>
+<ASEFigs/11179metamodel.pdf, id=99, 250.9375pt x 144.54pt>
 File: ASEFigs/11179metamodel.pdf Graphic file (type pdf)
 
 <use ASEFigs/11179metamodel.pdf>
@@ -429,7 +440,7 @@ File: ASEFigs/11179metamodel.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./ASEFigs/languageExtensionExample.pdf> <./ASEFigs/modelCatalogueContents.p
-df>] <ASEFigs/architecture.pdf, id=176, 193.72375pt x 239.89626pt>
+df>] <ASEFigs/architecture.pdf, id=148, 193.72375pt x 239.89626pt>
 File: ASEFigs/architecture.pdf Graphic file (type pdf)
 
 <use ASEFigs/architecture.pdf> [4 <./ASEFigs/11179metamodel.pdf> <./ASEFigs/arc
@@ -458,10 +469,141 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 194.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-(./5RelatedWork.tex [6] [7]) (./6Conclusion.tex
+(./5RelatedWork.tex
+
+LaTeX Warning: Citation `davi14' on page 6 undefined on input line 7.
+
+
+LaTeX Warning: Citation `davi12' on page 6 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Abler2011' on page 6 undefined on input line 9.
+
+
+LaTeX Warning: Citation `kunz09' on page 6 undefined on input line 21.
+
+
+LaTeX Warning: Citation `koma08' on page 6 undefined on input line 22.
+
+
+LaTeX Warning: Citation `oc' on page 6 undefined on input line 26.
+
+[6]
+
+LaTeX Warning: Citation `Sinaci2013784' on page 7 undefined on input line 34.
+
+
+LaTeX Warning: Citation `pmid25405066' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation `pmid22211181' on page 7 undefined on input line 46.
+
+
+LaTeX Warning: Citation `lero12' on page 7 undefined on input line 54.
+
+
+LaTeX Warning: Citation `LOV' on page 7 undefined on input line 67.
+
+
+LaTeX Warning: Citation `Stanbol' on page 7 undefined on input line 71.
+
+
+LaTeX Warning: Citation `kim02' on page 7 undefined on input line 92.
+
+
+LaTeX Warning: Citation `inm92' on page 7 undefined on input line 96.
+
+
+LaTeX Warning: Citation `kim02' on page 7 undefined on input line 96.
+
+
+LaTeX Warning: Citation `poole03' on page 7 undefined on input line 98.
+
+
+LaTeX Warning: Citation `dav14' on page 7 undefined on input line 110.
+
+
+LaTeX Warning: Citation `ragh08' on page 7 undefined on input line 110.
+
+
+LaTeX Warning: Citation `blob07' on page 7 undefined on input line 110.
+
+
+LaTeX Warning: Citation `kham08' on page 7 undefined on input line 110.
+
+
+LaTeX Warning: Citation `schl15' on page 7 undefined on input line 110.
+
+
+LaTeX Warning: Citation `pay12' on page 7 undefined on input line 111.
+
+
+LaTeX Warning: Citation `kham08' on page 7 undefined on input line 114.
+
+
+LaTeX Warning: Citation `dav14' on page 7 undefined on input line 120.
+
+
+LaTeX Warning: Citation `schl15' on page 7 undefined on input line 125.
+
+
+LaTeX Warning: Citation `MDHT' on page 7 undefined on input line 137.
+
+
+LaTeX Warning: Citation `doli06' on page 7 undefined on input line 138.
+
+
+LaTeX Warning: Citation `EUML' on page 7 undefined on input line 140.
+
+
+LaTeX Warning: Citation `sco12' on page 7 undefined on input line 148.
+
+[7]
+
+LaTeX Warning: Citation `catalyst' on page 8 undefined on input line 161.
+
+
+LaTeX Warning: Citation `oc' on page 8 undefined on input line 162.
+
+
+LaTeX Warning: Citation `harr09' on page 8 undefined on input line 162.
+
+
+LaTeX Warning: Citation `labk' on page 8 undefined on input line 162.
+
+
+LaTeX Warning: Citation `cais' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `fran11' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `lero11' on page 8 undefined on input line 165.
+
+
+LaTeX Warning: Citation `harr09' on page 8 undefined on input line 172.
+
+
+LaTeX Warning: Citation `harr09' on page 8 undefined on input line 186.
+
+
+LaTeX Warning: Citation `fran11' on page 8 undefined on input line 186.
+
+) (./6Conclusion.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 7.
-) [8] (./ASE2015MDR.bbl
+(Font)              <7> on input line 54.
+ [8] [9
+
+]
+<ASEFigs/ScreenShot1.png, id=221, 1270.7475pt x 655.44875pt>
+File: ASEFigs/ScreenShot1.png Graphic file (type png)
+
+<use ASEFigs/ScreenShot1.png>
+<ASEFigs/ScreenShot2.png, id=223, 1255.69125pt x 629.35126pt>
+File: ASEFigs/ScreenShot2.png Graphic file (type png)
+
+<use ASEFigs/ScreenShot2.png>) [10 <./ASEFigs/ScreenShot1.png> <./ASEFigs/Scree
+nShot2.png>] (./ASE2015MDR.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no „ in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
@@ -484,7 +626,8 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
-[9
+[11
+
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
@@ -497,35 +640,36 @@ Package rerunfilecheck Warning: File `ASE2015MDR.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `ASE2015MDR.out':
-(rerunfilecheck)             Before: 11FAD46A6CA7393BB15542230B41EDD3;1532
-(rerunfilecheck)             After:  5F832DCCF6838BEF59B9E9437EECF15A;1546.
+(rerunfilecheck)             Before: 9B1A0AD666C88C0075E69C7C408AC34A;1253
+(rerunfilecheck)             After:  7FFC1991633DA82BBD710BE06A699C46;1484.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 7167 strings out of 493120
- 110077 string characters out of 6135727
- 209085 words of memory out of 5000000
- 10410 multiletter control sequences out of 15000+600000
- 44828 words of font info for 93 fonts, out of 8000000 for 9000
+ 7179 strings out of 493120
+ 110322 string characters out of 6135727
+ 207973 words of memory out of 5000000
+ 10416 multiletter control sequences out of 15000+600000
+ 46470 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,7n,32p,262b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.7.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on ASE2015MDR.pdf (9 pages, 165703 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on ASE2015MDR.pdf (11 pages, 679917 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

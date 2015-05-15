@@ -7,37 +7,48 @@ The experience of applying the data model language, the model
 catalogue, and the associated generation tools in the context of
 clinical research informatics has led to the following suggestions.
 
-\paragraph{A model catalogue is needed, not a data dictionary} 
+\textsl{A data dictionary is not enough}. A simple, flat list of data
+definitions does not support re-use at scale: it requires the user to
+place all of the contextual information into the definition of each
+data item, and mitigates against the automatic generation and
+application of definitions.  Instead, we require a model catalogue, in
+which every data element or class is defined in context.
 
-\item metadata registries are not enough - you need models - (we
-  should include examples  of how data elements are contextualised -
-  Keith slides) - 
-\item these models should be linked to the implementation, for
-  otherwise it is too expensive to maintain them
-\item the models should be readable as data manuals - literate
-  modelling - it simply doesn't work to have to click on attributes to
-  understand their meaning and derivation 
-\item this readability applies to the development interface, this is
+\textsl{A catalogue is not enough}.  The models in the catalogue must
+be linked to implementations, and to each other, with a considerable
+degree of automatic support.  If the models are out of sync with the
+implementations, and with the data, then their value is sharply
+diminished.  Model-driven engineering is needed.
+
+\textsl{The tools must be usable by domain experts}. To have the
+processes of model creation and maintenance mediated by software
+engineers is problematic: there may be misunderstandings regarding
+interpretation, but---more importantly---there are not enough software
+engineers to go around.  
+
+\textsl{Many of the familiar} 
+
+ this readability applies to the development interface, this is
   the interface that you want to use (can't do the turn time) - and
   you need to be able to pair program with domain experts
-\item you want inheritance within models, and include/import across
+\textsl{A} you want inheritance within models, and include/import across
   models (start thinking of the models as code, although this is about
   managing information in general - managing declarations - it is
   coincidental that we are generating artefacts from them)
-\item you may want different types of model for different generated
+\textsl{B} you may want different types of model for different generated
   artefacts---depending upon what, exactly, is in the generator code
   as parameters and additional information---it may be the same set of
   data points overall, but you might well have a different refactoring
   in Fowler terms
-\item version and store the generation code (!)
-\item tag the generated artefacts with a link back to the model
+\textsl{C} version and store the generation code (!)
+\textsl{D} tag the generated artefacts with a link back to the model
   catalogue (XML schemas in HIC!)
-\item you will want more models than you think: for example, consider
+\textsl{E} you will want more models than you think: for example, consider
   the model of a clinical test; now think about how it is dropped into
   a pathway; you need the pathway model to tell you what the dataset
   means; it has added further context to the data element definitions
   (you could flatten this, but that's bad)
-\item automate aspects of model management---versioning and dealing
+\textsl{F} automate aspects of model management---versioning and dealing
   with multiple models
   \begin{itemize}
   \item automatically create (and propose) links, including
@@ -49,21 +60,32 @@ clinical research informatics has led to the following suggestions.
     this was derived from has changed
   \item have publication cycle---a published model is for life
   \end{itemize}
-\item general lesson: if you want to manage data semantics, you need a
+\textsl{G} general lesson: if you want to manage data semantics, you need a
   compositional approach---none of this central coordination of a
   single data dictionary, none of this single hierarchy of data
   elements, none of this element by element description (all the
   context in the text of the element definition?  doesn't work!)
-\item general lesson: if you are going to manage data at scale, you
+\textsl{H} general lesson: if you are going to manage data at scale, you
   need data model driven approach
-\item general lesson: if you have a model driven approach (data model
+\textsl{I} general lesson: if you have a model driven approach (data model
   or otherwise) then your management of models has all the same
   challenges as management of source code (you need an IDE) - really,
   if you are using models as programs, then you need to support them
   as programs
-\end{itemize}
 
-\subsection{Future work}
+\clearpage
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=\textwidth]{ScreenShot1}
+  \caption{web interface to the model catalogue}
+  \label{fig:webinterface}
+\end{figure*}
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=\textwidth]{ScreenShot2}  
+  \caption{automatic detection of model variation}
+  \label{fig:variation}
+\end{figure*}
 
