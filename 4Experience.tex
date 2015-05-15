@@ -112,12 +112,13 @@ maintaining the datasets as data models, in the catalogue.
 \subsection{Coordination of clinical data acquisition}
 
 The UK Department of Health, through the NIHR and the National Health
-Service (NHS), is providing funding for the collection for the whole
-genome sequencing of blood and tissue samples from patients with
-cancer, rare disorders, and infectious disease.  A network of regional
-Genomic Medicine Centres (GMCs) is being established to collect
-samples and data, and to provide access to genomic medicine across the
-whole of the country.
+Service (NHS), is providing funding for the whole genome sequencing of
+blood and tissue samples from patients with cancer, rare disorders,
+and infectious disease.  A network of regional Genomic Medicine
+Centres (GMCs) is being established to collect samples and data, and
+to provide access to genomic medicine across the whole of the
+country.  The funding committed to date is approximately \pounds
+300m. 
 
 The results of the whole genome sequencing will be linked to detailed
 information on each participant: clinical and laboratory information
@@ -142,8 +143,41 @@ been created for more than half of the diseases included.  This is due
 partly to the availability of the model catalogue application from the
 start of the project, and partly to the availability, within the
 catalogue, of the full complement of HIC-defined data models and
-related data sets---including the NHS data dictionary and the national
-cancer reporting datasets. 
+related data sets---including the national NHS data dictionary and the
+national cancer reporting datasets.
+
+The informatics infrastructure required for the genomic medicine
+programme needs to support frequent extensions or revisions to the
+models proposed.  As the analysis of the genomic data proceeds, new
+questions will be asked, and new information will be required from the
+health records.  
+
+Two routes are available for the provision of data from the network of
+contributing centres: direct data entry into electronic case report
+forms, in a on-line clinical trials management system; and electronic
+submission of data in XML format.  The intended interpretation of the
+data required is explained in a regularly-updated set of data
+manuals.   
+
+It is important that the forms used for direct data entry, the schemas
+used for XML submission, and the data manuals are properly
+synchronised.  An initial approach to this, in which a single model
+was used as the basis for the generation of all three kinds of
+artefact, proved inconvenient in practice.  Although the same data
+points were to be collected in each case, the distribution of these
+data points across classes and sections was different.
+
+Accordingly, the model catalogue is used to store three different
+models for each dataset: one for the generation of the forms, another
+for the generation of the XML schemas, and one for the generation of
+the data manual. 
+
+, and implementations are
+generated fully automatically.
+
+ , and the artefacts are
+generated automatically from these models. these models are
+semantically linked, and the Inconsistent changes are flagged, and
 
 For the Genomics England exercise, the Models Catalogue has had a
 social networking feature added, allowing messaging forums to be
