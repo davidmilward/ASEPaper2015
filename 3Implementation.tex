@@ -3,7 +3,7 @@
 \subsection{Data Model Language}
 
 A UML metamodel for the data model language is shown in
-Figure~\ref{fig:datamodellanguage}. 
+Figure~\ref{fig:mcSimplifiedOverview}. 
 
 
 The key concept behind the language is that of a datamodel, a
@@ -32,7 +32,7 @@ in Figure \ref{fig:mcSimplifiedOverview}.
 
 \begin{figure}[here]
   \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{MetaModel}
-  \caption{Overview of Metamodel} 
+  \caption{Overview of Language Metamodel} 
   \label{fig:mcSimplifiedOverview}
 \end{figure}
 
@@ -73,10 +73,10 @@ ValueSpecs are intermediate entities to describe \emph{how} the data will be rep
 The main reason for creating a language for handling the data structures in this manner is not only so that models can be curated, versioned and maintained easily, but that the datamodels produced can then be transformed automatically for use in other heterogeneous systems. To illustrate this figure ~\ref{fig:mofLayers} shows the LEMMA meta-model within a 4 tier abstraction diagram. The layers within this diagram are based around idea put forward by the  OMG(~\cite{OMG}), specifically model driven architecture (MDA ~\cite{MDA}). The MDA defines \emph{n} abstraction layers for modelling, although 4-layers are normally used.
 \begin{figure}[here] 
 	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{MOFLayers}
-	\caption{ Datamodel in Excel Format} 
+	\caption{Meta-Modelling Framework} 
 	\label{fig:mofLayers}
 \end{figure}
-The M0 layer is \emph{real-world} level, the level at which real world objects exist, people, cars, programs, etc. The M1 layer is level at which programs, such as a java program, or a java class definition exist in their static runtime form. The instantiation of a class occurs at the level below the class, so a java object runs in level M0. In defining datasets or datamodels we are dealing in datamodels which are instantiated at the M1 level, the \emph{Cancer and Outcomes Services Dataset} exists at this level, although their may be many conforming instances running at the M0 level. The datamodel is defined in out meta-modelling language, which exists at the M2 or meta-modelling level, and in turn conforms to the more abstract specification known as ECore.
+The M0 layer is the \emph{real-world} level, the level at which real world objects exist, people, cars, programs, etc. The M1 layer is level at which programs, such as a java program, or a java class definition exist in their static runtime form. The instantiation of a class occurs at the level below the class, so a java object runs in level M0. In defining datasets or datamodels we are dealing in datamodels which are instantiated at the M1 level, the \emph{Cancer and Outcomes Services Dataset} exists at this level, although their may be many conforming instances running at the M0 level. The datamodel is defined in out meta-modelling language, which exists at the M2 or meta-modelling level, and in turn conforms to the more abstract specification known as ECore.
 
 An instance of a datamodel can be written in this DSL in the same way as java code, and figure \ref{fig:excelCOSD} shows how this code looks in the eclipse development toolkit. In this diagram the excel representation of the \emph{Cancer and Outcomes Services Dataset} shown in figure \ref{fig:excelCOSD} has been transformed into the meta-model.
 
