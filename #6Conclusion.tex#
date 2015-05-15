@@ -7,7 +7,15 @@ The experience of applying the data model language, the model
 catalogue, and the associated generation tools in the context of
 clinical research informatics has led to the following suggestions.
 
-\paragraph{A model catalogue is needed, not a data dictionary} 
+\paragraph{A data dictionary is not enough} A simple, flat list of
+data definitions does not support re-use at scale: it requires the
+user to place all of the contextual information into the definition of
+each data item, and mitigates against the automatic generation and
+application of definitions.  Instead, we require a model catalogue, in
+which every data element or class is defined in context. 
+
+\paragraph{A catalogue is not enough}  The models in the catalogue
+must be linked to impl
 
 \item metadata registries are not enough - you need models - (we
   should include examples  of how data elements are contextualised -
