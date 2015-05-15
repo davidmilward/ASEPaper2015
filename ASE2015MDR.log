@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.7)  11 MAY 2015 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.7)  15 MAY 2015 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,20 +324,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `zed'
  (./ASE2015MDR.aux)
 \openout1 = `ASE2015MDR.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -368,7 +368,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (/Users/jdavies/Library/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -381,9 +381,9 @@ Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (./ASE2015MDR.out) (./ASE2015MDR.out)
 \@outlinefile=\write3
@@ -400,246 +400,93 @@ ftex.map}
 
 
 ]) (./2Language.tex
+Underfull \hbox (badness 1648) in paragraph at lines 38--45
+[]\OT1/ptm/m/n/10 Having con-structed pre-cise ob-ject mod-els to de-scribe
+ []
 
-LaTeX Warning: Citation `UML' on page 2 undefined on input line 4.
+[2
 
+]) (./3Implementation.tex
 
-LaTeX Warning: Citation `ECORE' on page 2 undefined on input line 4.
+LaTeX Warning: Citation `EMF' on page 3 undefined on input line 9.
 
-<ASEFigs/BasicISO.png, id=85, 413.29407pt x 320.69812pt>
-File: ASEFigs/BasicISO.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 19.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+<ASEFigs/languageExtensionExample.pdf, id=98, 384.43625pt x 221.82875pt>
+File: ASEFigs/languageExtensionExample.pdf Graphic file (type pdf)
 
-<use ASEFigs/BasicISO.png> [2
+<use ASEFigs/languageExtensionExample.pdf>
 
- <./ASEFigs/BasicISO.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<ASEFigs/modelCatalogueContents.pdf, id=99, 477.785pt x 228.855pt>
+File: ASEFigs/modelCatalogueContents.pdf Graphic file (type pdf)
+
+<use ASEFigs/modelCatalogueContents.pdf>
+<ASEFigs/11179metamodel.pdf, id=102, 250.9375pt x 144.54pt>
+File: ASEFigs/11179metamodel.pdf Graphic file (type pdf)
+
+<use ASEFigs/11179metamodel.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./ASEFigs/languageExtensionExample.pdf> <./ASEFigs/modelCatalogueContents.p
+df>] <ASEFigs/architecture.pdf, id=153, 193.72375pt x 239.89626pt>
+File: ASEFigs/architecture.pdf Graphic file (type pdf)
+
+<use ASEFigs/architecture.pdf> [4 <./ASEFigs/11179metamodel.pdf> <./ASEFigs/arc
+hitecture.pdf>]) (./4Experience.tex
+LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <10> not available
+(Font)              Font shape `OT1/ptm/m/it' tried instead on input line 6.
+ [5]
+<ASEFigs/ComparisonOfDataClasses.png, id=204, 1485.55pt x 735.74875pt>
+File: ASEFigs/ComparisonOfDataClasses.png Graphic file (type png)
+
+<use ASEFigs/ComparisonOfDataClasses.png>
+Overfull \hbox (6.0pt too wide) in paragraph at lines 168--169
+[][] 
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 27.
+(Font)              <7> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 27.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 27.
-
+(Font)              <5> on input line 177.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 177.
 (/Users/jdavies/Library/texmf/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 177.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 177.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-[]\OT1/ptm/m/n/8 ISO11179 Im-ple-men-ta-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/8 Data El-e-ment
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/8 An idea that can be
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 32--32
-[]\OT1/ptm/m/n/8 Common Data
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 32--32
-\OT1/ptm/m/n/8 per-mis-si-ble val-ues are
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-[]\OT1/ptm/m/n/8 A unit of data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\OT1/ptm/m/n/8 for which the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\OT1/ptm/m/n/8 def-i-ni-tion, iden-ti-fi-ca-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\OT1/ptm/m/n/8 rep-re-sen-ta-tion and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\OT1/ptm/m/n/8 Per-mis-si-ble Val-ues
- []
-
-
-Underfull \hbox (badness 4995) in paragraph at lines 33--33
-[]\OT1/ptm/m/n/8 Value Do-main
- []
-
-
-Underfull \hbox (badness 4765) in paragraph at lines 33--33
-[]\OT1/ptm/m/n/8 The de-scrip-tion of a
- []
-
-
-Underfull \hbox (badness 2591) in paragraph at lines 34--34
-[]\OT1/ptm/m/n/8 A set of valid value
- []
-
-
-Underfull \hbox (badness 6016) in paragraph at lines 34--35
-[]\OT1/ptm/m/n/8 A set of valid Value
- []
-
-<ASEFigs/ELM_EcoreDiagram.png, id=94, 761.84625pt x 317.185pt>
-File: ASEFigs/ELM_EcoreDiagram.png Graphic file (type png)
-
-<use ASEFigs/ELM_EcoreDiagram.png>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 51--52
-[][] 
- []
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 69.
-(./ASEFigs/ElmmDSL.xtext
-Overfull \hbox (168.00427pt too wide) in paragraph at lines 1--3
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (30.00287pt too wide) in paragraph at lines 3--4
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[3 <./ASEFigs/ELM_EcoreDiagram.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 5.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
-
-Overfull \hbox (138.00397pt too wide) in paragraph at lines 17--18
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.0028pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.00269pt too wide) in paragraph at lines 52--53
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (30.00287pt too wide) in paragraph at lines 56--57
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-)
-
-LaTeX Warning: Citation `(' on page 4 undefined on input line 72.
-
-<ASEFigs/ElmDSLCOSDModel.png, id=106, 1121.18875pt x 611.28375pt>
-File: ASEFigs/ElmDSLCOSDModel.png Graphic file (type png)
-
-<use ASEFigs/ElmDSLCOSDModel.png>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 75--76
-[][] 
- []
-
-<ASEFigs/COSDExcel.png, id=108, 1331.97626pt x 740.7675pt>
-File: ASEFigs/COSDExcel.png Graphic file (type png)
-
-<use ASEFigs/COSDExcel.png>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 83--84
-[][] 
- []
-
-) (./3Implementation.tex
+) [6 <./ASEFigs/ComparisonOfDataClasses.png>]) (./5RelatedWork.tex
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [4 <./ASEFigs/ElmDSLCOSDModel.png> <./ASEFigs/COSDExcel.png>] <ASEFigs/Applica
-tionArchitect1.png, id=180, 499.11469pt x 676.77844pt>
-File: ASEFigs/ApplicationArchitect1.png Graphic file (type png)
-
-<use ASEFigs/ApplicationArchitect1.png>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 13--14
-[][] 
+ [7]
+Underfull \hbox (badness 3849) in paragraph at lines 20--38
+[]\OT1/ptm/m/n/10 Several ef-forts have ad-dressed the rep-re-sen-ta-tion of
  []
 
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+) (./6Conclusion.tex) [8] (./ASE2015MDR.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 23.
-
-Overfull \hbox (7.88014pt too wide) in paragraph at lines 24--24
-[]\OT1/ptm/m/n/10 Relationship| 
- []
-
-
-Overfull \hbox (3.43019pt too wide) in paragraph at lines 24--25
-[]\OT1/ptm/m/n/10 Destination| 
- []
-
-
-Overfull \hbox (6.76027pt too wide) in paragraph at lines 25--25
-[]\OT1/ptm/m/n/10 containment| 
- []
-
-
-Overfull \hbox (9.53017pt too wide) in paragraph at lines 25--26
-[]\OT1/ptm/m/n/10 DataElement| 
- []
-
-
-Overfull \hbox (6.76027pt too wide) in paragraph at lines 26--26
-[]\OT1/ptm/m/n/10 containment| 
- []
-
-
-Overfull \hbox (4.52017pt too wide) in paragraph at lines 27--27
-[]\OT1/ptm/m/n/10 hierarchical| 
- []
-
-
-Overfull \hbox (9.53017pt too wide) in paragraph at lines 28--28
-[]\OT1/ptm/m/n/10 DataElement| 
- []
-
-
-Overfull \hbox (7.87018pt too wide) in paragraph at lines 28--28
-[]\OT1/ptm/m/n/10 supersession| 
- []
-
-
-Overfull \hbox (9.53017pt too wide) in paragraph at lines 28--29
-[]\OT1/ptm/m/n/10 DataElement| 
- []
-
-<ASEFigs/System2.png, id=182, 650.43pt x 548.0475pt>
-File: ASEFigs/System2.png Graphic file (type png)
- <use ASEFigs/System2.png>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 35--36
-[][] 
- []
-
-) (./4Experience.tex [5 <./ASEFigs/ApplicationArchitect1.png> <./ASEFigs/System
-2.png (PNG copy)>]) (./5Conclusion.tex)
-No file ASE2015MDR.bbl.
+(Font)              <8> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 27.
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -651,40 +498,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-[6
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (./ASE2015MDR.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package rerunfilecheck Info: File `ASE2015MDR.out' has not changed.
-(rerunfilecheck)             Checksum: E0527621F1B074ACA29E8554719E1FF9;1157.
+(rerunfilecheck)             Checksum: 8FA63DE197D2E2041FF623BFFF3435F6;1191.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7111 strings out of 493120
- 109699 string characters out of 6135727
- 240050 words of memory out of 5000000
- 10342 multiletter control sequences out of 15000+600000
- 39602 words of font info for 87 fonts, out of 8000000 for 9000
+ 7151 strings out of 493120
+ 110043 string characters out of 6135727
+ 204848 words of memory out of 5000000
+ 10404 multiletter control sequences out of 15000+600000
+ 43104 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,32p,1143b,1607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,7n,32p,1514b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on ASE2015MDR.pdf (6 pages, 280525 bytes).
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on ASE2015MDR.pdf (9 pages, 190483 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
