@@ -9,30 +9,29 @@ Several examples of Model Driven Engineering for e-Heath software are present in
 
 In the Model Driven Health Tools (MDHT)~\cite{MDHT} project, the HL7 Clinical Document Architecture (CDA) standard~\cite{doli06} for managing patient records is implemented using Eclipse UML tools~\cite{EUML}. The benefits of applying model driven engineering are clear, modelling tools are used to model the CDA standards and interoperable implementations of the standard are automatically derived from the models. In principle, this is similar to the approach in the model catalogue, where the CDA meta-data can be represented and implementations derived. However, MDHT supports only the CDA standard, whereas the model catalogue can interoperate with any meta data standard. The CDA standards are large and complex, in~\cite{sco12}, a model driven approach is advocated to simplify the HL7 CDA. This is supported by three case studies: the NHS England ‘Interoperability Toolkit’ (ITK); simplification of US CDA documents and the Common Assessment Framework (CAF) project for health and care providers in England. The paper outlines the benefits of simplifying the CDA standard for practical applications. The model catalogue supports similar simplifications, where large and complex meta data schemes are simplified by mapping only relevant meta data in the generated artefacts.
 
-
-%could do with some stuff about caBIG caCORE CancerGrid ADAM!
+The current technique has evolved from the CancerGrid project~\cite{davi14}, where an ISO1179-compliant metadata registry was developed for curation of semantic meta data and model-driven generation of trial-specific software~\cite{davi12, Abler2011}. The practical approach to generating forms in the CancerGrid project has been made more formal by use of an ISO11179 based metamodel, more flexible by use of a plugin architecture and more scalable by use of a collaborative on-line interface, in the current incarnation. In techniques such as~\cite{mass13}, specific schemas recognised as a key component to enable large scale processing of genomic data, however the approach does not integrate ISO11179 principles and instead uses a single fixed schema for all data. Another effort to develop an implementation of ISO11179 is found in the US caBIG initiative~\cite{kunz09}, however the approach requires a proprietary storage database and the caCORE software development kit~\cite{koma08} applies model driven development to generate stubs of web service, requiring developers to create application logic by-hand, whereas our technique integrates with existing clinical Electronic Data Capture tools and workflows, such as OpenClinica~\cite{oc}. 
 
 
 %%%%  ontological representations of ISO11179 %%%%%%%%
 
 Several efforts have addressed the representation of ISO11179 as
 ontological models for enabling data integration across metadata
-registries (MDRs). In \cite{Sinaci2013784} the authors describe a
+registries (MDRs). In~\cite{Sinaci2013784} the authors describe a
 federated semantic metadata registry framework where CDE (Common Data
 Elements) are exposed as LOD (Linked Open Data) resources. CDEs are
 described in RDF, can be queried and interlinked with CDEs in other
 registries using SKOS. An ISO1179 ontology has been defined as part of
 the framework and the Semantic MDR has been implemented using the Jena
-framework. In \cite{pmid25405066} the authors present the Clinical
+framework. In~\cite{pmid25405066} the authors present the Clinical
 Data Element Ontology (CDEO) for unified indexing and retrieval of
 elements across MDRs. Concepts in CDEO have been organised and
-represented using SKOS. In \cite{pmid22211181} the authors present
+represented using SKOS. In~\cite{pmid22211181} the authors present
 case studies for representing HL7 Detailed Clinical Models (DCMs) and
 the ISO11179 model in OWL. A combination of UML diagrams and Excel
 spreadsheets were used to extract the metamodels for 14 HL7 DCM
 constructs. A critical limitation of this approach is that the
 transformation from metamodels to their ontological representation in
-OWL is based on a manual encoding.
+OWL is based on a manual encoding. In~\cite{lero12}, existing ontologies are used to enriche OpenClinica forms; the current technique can integrate these ontologies to capture compliant data in a similar fashion, but does so by using an ISO11179 meta data registry and model driven methodology.
 
 %%%% Ontology repositories %%%%%%%%%
 
@@ -40,27 +39,18 @@ Ontology repositories can be considered closely analogous to model
 catalogues they provide the infrastructure for storing, interlinking,
 querying, versioning and visualising ontologies. Relationships
 capturing the alignments and mappings between ontologies are also
-captured allowing easy navigability.
-
-Linked Open vocabularies\cite{LOV} provides a service for discovering
-vocabularies and ontologies published following the principles of
+captured allowing easy navigability. Linked Open vocabularies\cite{LOV} provides a service for discovering vocabularies and ontologies published following the principles of
 linked data. Besides the above features, it provides documentation
 about ontologies automatically harvested from their structure and
-identifies dependencies.
-
-Apache Stanbol\cite{Stanbol} provides a set of reusable components for Semantic
-content management.  The Apache Stanbol Ontology Manager provides a
+identifies dependencies. Apache Stanbol~\cite{Stanbol} provides a set of reusable components for Semantic
+content management. The Apache Stanbol Ontology Manager provides a
 controlled environment for managing ontologies and ontology
 networks. Main components of the manager include (a) Ontonet, a Java
 API for the construction and management of ontology networks from the
 ontology knowledge base. (b) Registry, an RDF resource that provides
 descriptions of ontology libraries in the knowledge base. The registry
 also provides a management API for administrators to pre-configure
-sets of ontologies loaded in the ontology libraries.
-
-KAON2\cite{Kaon2} provides an API infrastructure for managing OWL-DL,
-SWRL and F-Logic ontologies. Access to the ontologies is provided via
-a single stand alone server. OWL DL Inferencing and SPARQL based
+sets of ontologies loaded in the ontology libraries. KAON2~\cite{Kaon2} provides an API infrastructure for managing OWL-DL, SWRL and F-Logic ontologies. Access to the ontologies is provided via a single stand alone server. OWL DL Inferencing and SPARQL based
 querying are supported.
 
 
