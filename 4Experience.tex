@@ -170,53 +170,19 @@ data points across classes and sections was different.
 Accordingly, the model catalogue is used to store three different
 models for each dataset: one for the generation of the forms, another
 for the generation of the XML schemas, and one for the generation of
-the data manual. 
+the data manual.  These models are semantically-linked.  If one is
+updated, then the fact that the others may now be inconsistent will be
+flagged to the user.  
 
-, and implementations are
-generated fully automatically.
+The same linkage is made with regard to existing reporting datasets
+and clinical audits.  To avoid unnecessary duplication of effort, the
+reporting datasets for the genomic medicine program have been aligned
+with these activities.  The existing datasets have been modelled, and
+updates to them will be tracked in the catalogue: again, potential
+inconsistencies can be flagged. 
 
- , and the artefacts are
-generated automatically from these models. these models are
-semantically linked, and the Inconsistent changes are flagged, and
-
-For the Genomics England exercise, the Models Catalogue has had a
-social networking feature added, allowing messaging forums to be
-automatically generated around a \emph{datamodel} or
-\emph{dataclass}. This allows users to develop a new draft datamodel,
-and then
-
-From looking at the datasets we can see that in the first 2 major
-datamodels produced X\% of data elements and dataclasses were derived
-from existing sources, a fact entirely due to the use of the Model
-Catalogue in the data curation process. Time to assemble a new
-datamodel has been cut from months to weeks as a result of having a
-single shared source for the datamodel, and having the means to
-electronically comment on and discuss datamodel development in real
-time as it is happening.
-
-\begin{itemize}
-	\item Data Elements can be used across different DataModels - favourites or shopping cart.
-	\item Unique Identification of DataElements 
-	\item Documentation can be automatically generated for review purposes
-	\item Consistency checking carried out on data elements
-	\item Generation of XSDs, XML, and Forms as output, interfacing with OpenClinica.
-	\item Data Provenance
-\end{itemize}
-
-\begin{figure}[here]
-	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ComparisonOfDataClasses.jpg}
-	\caption{Screen Shot of DataClass Comparison} 
-	\label{fig:dataClassComparison}	
-\end{figure}
-
-Whilst that process was being carried out, some of these datasets were added to the Model Catalogue, and the subject matter experts were given visibility of the datasets already stored in the Model Catalogue. At this point the Model Catalogue was already loaded with datasets derived from the NHS Data dictionary such as COSD and from the results of the NHIC work. Use of the toolkit resulted in the users being able to very quickly assemble a new dataset from an existing dataset; they were then able to go through each data element in turn and compare it to an existing data element in another datamodel, a process that is illustrated in Figure~\ref{fig:dataClassComparison}.
-
-
->>>>>>> origin/master
-
-
-
-During the Genomics England project, which is ongoing, the Models Catalogue toolkit has also had a social networking feature added, allowing messaging forums to be automatically generated around a \emph{datamodel} or \emph{dataclass}. This allows users to develop a new draft datamodel, register it as a forum subject and invite other clinicians to comment on it. The result is easier coordination and development of the datasets. 
+The degree of data definition re-use facilitated by the model
+catalogue 
 
 Two initial tasks in the GE where to assemble datamodels for Cancer and for Rare Diseases. Although these models are still being developed we can report back the facts that to date the new datamodels have been built with a significant amount of re-use as illustrated in the following four tables.
 
