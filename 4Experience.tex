@@ -132,22 +132,18 @@ case of breast cancer, but not for other diseases.
 thus far.  Each disease corresponds to a different combination of
 clinical and laboratory data points, a different set of ontological
 statements, and a different set of questions for the participant.
+There are, however, significant overlaps between diseases: for
+example, many different rare diseases will require the same
+information on kidney or heart function.   
 
-
-
-
-
-
-Whilst that process was being carried out, some of these datasets were
-added to the Model Catalogue, and the subject matter experts were
-given visibility of the datasets already stored in the Model
-Catalogue. At this point the Model Catalogue was already loaded with
-datasets derived from the NHS Data dictionary such as COSD and from
-the results of the NHIC work. Use of the toolkit resulted in the users
-being able to very quickly assemble a new dataset from an existing
-dataset; they were then able to go through each data element in turn
-and compare it to an existing data element in another datamodel, a
-process that is illustrated in Figure~\ref{fig:dataClassComparison}.
+The modelling task is at least an order of magnitude greater than that
+required for the NIHR HIC, and yet candidate datasets have already
+been created for more than half of the diseases included.  This is due
+partly to the availability of the model catalogue application from the
+start of the project, and partly to the availability, within the
+catalogue, of the full complement of HIC-defined data models and
+related data sets---including the NHS data dictionary and the national
+cancer reporting datasets. 
 
 For the Genomics England exercise, the Models Catalogue has had a
 social networking feature added, allowing messaging forums to be
@@ -172,17 +168,17 @@ time as it is happening.
 	\item Generation of XSDs, XML, and Forms as output, interfacing with OpenClinica.
 	\item Data Provenance
 \end{itemize}
-\lipsum[1-2]
-\begin{figure*}  
-	\includegraphics[width= \textwidth,natwidth=610,natheight=642]{ComparisonOfDataClasses.jpg}
+
+\begin{figure}[here]
+	\includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{ComparisonOfDataClasses.jpg}
 	\caption{Screen Shot of DataClass Comparison} 
 	\label{fig:dataClassComparison}	
-\end{figure*}
-\lipsum[3-4]
+\end{figure}
+
 Whilst that process was being carried out, some of these datasets were added to the Model Catalogue, and the subject matter experts were given visibility of the datasets already stored in the Model Catalogue. At this point the Model Catalogue was already loaded with datasets derived from the NHS Data dictionary such as COSD and from the results of the NHIC work. Use of the toolkit resulted in the users being able to very quickly assemble a new dataset from an existing dataset; they were then able to go through each data element in turn and compare it to an existing data element in another datamodel, a process that is illustrated in Figure~\ref{fig:dataClassComparison}.
 
 
- 
+>>>>>>> origin/master
 
 
 
@@ -249,7 +245,15 @@ Two initial tasks in the GE where to assemble datamodels for Cancer and for Rare
 
 These figures are a snap-shop of the work in progress, however they are able to illustrate the rate of data element re-use, and of value domain datatype re-use. Both DataModels show an above 20 \% re-use rate for data elements, rising to above 65 \% for the datatypes. The results are significant and indicate that the re-use of both data elements and value types is significant part of the development of disease datamodels, having a model driven toolkit which can assemble a new datamodel and compare it in detail has clearly benefited the clinicians who are now using it.  We admit that the results are not the result of any experiment we have set up to prove the value of the toolkit, but they do strongly support the value of applying model-driven engineering principles in this domain. The time to assemble a new datamodel has been cut from months to weeks as a result of having a single shared source for the datamodel, and having the means to electronically comment on and discuss datamodel development in real time. Unique IRI's identifying each datamodel, dataclass, dataelement and valuedomain mean that searching for entities is fast, comparison between entities is clear and unambiguous, and generating output which conforms to agreed standards becomes straightforward.
 
- 
+
+
+<<<<<<< HEAD
+=======
+
+
+% ----------------------------------------------------------------------
+
+>>>>>>> origin/master
 \section{Lessons actually learned?}
 
 \begin{itemize}
