@@ -1,0 +1,110 @@
+\section{Data Models and Metadata}
+
+\subsection{Data models}
+
+A dataset definition for clinical research will consist of a number of
+different parts, each of which declares a set of related data items.
+Typically, this will be a set of data items that would be collected
+together: in the completion of a `case report form' in a study, or in
+the report of a clinical event.  These parts may be `repeating', in
+that there may be more than one form of that type completed, or more
+than one event of that type reported upon.  
+
+A data item declaration should explain not only the name under which
+values are to be stored, but also the type of those values.  If the
+type is numeric, then the unit of measurement should be given.  If the
+type is an enumeration, then the intended interpretation of each value
+should be explained.  Finally, the parts of the dataset may be
+connected or related to one another, and these relationships may have
+constrained multiplicities.
+
+It should be clear that a dataset definition can be represented as a
+class diagram or object model.  Data items can be introduced as
+attributes, parts of the model as classes, and relationships between
+classes as associations---complete with multiplicities.  Data types
+and enumerations can be used to support attribute declarations, and
+hence data item definitions; constraints can be used to express range
+restrictions and intended relationships between data items.
+
+Class diagrams can be used also to provide precise definitions for
+data sources: existing clinical systems or research databases.  These
+systems may be implemented using a combination of technologies but,
+assuming that the value of the data justifies the effort required,
+precise object models can be created to describe the interfaces that
+they might present for data re-use. 
+
+\subsection{Models as metadata}
+
+Having constructed precise object models to describe datasets and data
+sources, we can use them as a basis for automated software and data
+engineering.  This involves the use of models as metadata in three
+respects: for software artefacts that are generated or configured; for
+data that these artefacts store or process; and for other models,
+capturing relationships between data points declared in different
+models, and hence the data stored or processed against them.
+
+For the first of these, we need only maintain the relationship between
+the implementation and the model that was used to generate or
+configure it.  If the model is stored in a repository or \emph{model
+  catalogue} and published, then we have only to create a link between
+the implementation and this published instance.  This link may be
+created automatically in the case where the model is generated,
+partially or completely, from an existing implementation: for example,
+from the schema of a relational database.
+
+For the second, a link must be created between each data point, or
+collection of data points, and the corresponding declaration in the
+data model.  The model catalogue then requires some support for the
+language in which the data model is expressed, sufficient to support
+the creation and manipulation of links to specific components: in
+particular, to specific classes and attributes.  If the data is
+acquired or processed using a software implementation for which a data
+model has already been registered, then that model may provide a basis
+for the automatic creation of a link to the corresponding declaration.
+
+For the third, we need the same ability to create and manipulate links
+between components of different models.  Instead of links between
+model and implementation, however, we have links representing
+different kinds of relationships: provenance and re-use of model
+components; versioning of models; and, most importantly,
+\emph{semantic relationships} between attributes or
+classes---assertions that one attribute or class has the same meaning
+or interpretation as another.  This is precisely the information
+needed to support automation in data discovery, integration, and
+re-use.
+
+\subsection{Data Model Language}
+
+The core features of our modelling language are familiar: classes,
+associations, attributes, constraints, enumerations, data types.
+However, our interpretation of these features is narrower than that
+set out in, for example, the specifications of the Unified Modeling
+Language (UML)~\cite{UML} or Ecore~\cite{ECORE}.  For this reason, and
+because of the need to refer explicitly to models and capture semantic
+relationships between models, classes, and attributes, we define a
+domain specific language for data models.
+
+We extend this language to include additional modelling features
+pertaining to certain kinds of implementation artefacts, such as
+forms, messages, databases, and documentation.  This is necessary only
+when the feature in question may have a bearing upon the data
+semantics, and may thus serve as a source or target for a link
+describing a property or relationship.  
+
+For example, a section of a form, corresponding to one or more classes
+of data, might comprise information about allergies.  We may wish to
+link this section to a term in an ontology recording this fact.  This
+makes it easier for someone interested in models of allergy
+information to locate and possibly re-use the definitions; it also
+adds context to any semantic links to data classes and attributes
+associated with that section.
+
+The generated or configured part of an implementation may include
+features not described by the data model.  This will be the case
+wherever a model-driven or generative approach has been adopted in the
+development of an application.  In this case, the artefact generated
+from or represented by the data model is itself a model, in a
+different modelling language.  The use of a data model, in our domain
+specific language, as metadata for this other model should come as no
+surprise: it is no different from the use of a model as metadata for
+program source code. 
