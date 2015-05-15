@@ -21,25 +21,52 @@ Several efforts have addressed the representation of ISO11179 as
 ontological models for enabling data integration across metadata
 registries (MDRs). In \cite{Sinaci2013784} the authors describe a
 federated semantic metadata registry framework where CDE (Common Data
-Elements) are exposed as LOD resources. CDEs are described in RDF, can
-be queried and interlinked with CDEs in other registries using
-SKOS. An ISO1179 ontology has been defined as part of the framework
-and the Semantic MDR has been implemented using the Jena framework. In
-\cite{pmid25405066} the authors present the Clinical Data Element
-Ontology (CDEO) for unified indexing and retrieval of elements across
-MDRs. Concepts in CDEO have been organised and represented using
-SKOS. In \cite{pmid22211181} the authors present case studies for
-representing HL7 Detailed Clinical Models (DCMs) and the ISO11179
-model in OWL. A combination of UML diagrams and Excel spreadsheets
-were used to extract the metamodels for 14 HL7 DCM constructs. A
-critical limitation of this approach is that the transformation from
-metamodels to their ontological representation in OWL is based on a
-manual encoding.
+Elements) are exposed as LOD (Linked Open Data) resources. CDEs are
+described in RDF, can be queried and interlinked with CDEs in other
+registries using SKOS. An ISO1179 ontology has been defined as part of
+the framework and the Semantic MDR has been implemented using the Jena
+framework. In \cite{pmid25405066} the authors present the Clinical
+Data Element Ontology (CDEO) for unified indexing and retrieval of
+elements across MDRs. Concepts in CDEO have been organised and
+represented using SKOS. In \cite{pmid22211181} the authors present
+case studies for representing HL7 Detailed Clinical Models (DCMs) and
+the ISO11179 model in OWL. A combination of UML diagrams and Excel
+spreadsheets were used to extract the metamodels for 14 HL7 DCM
+constructs. A critical limitation of this approach is that the
+transformation from metamodels to their ontological representation in
+OWL \footnote{} is based on a manual encoding.
 
 %%%% Ontology repositories %%%%%%%%%
 
-Ontology repositories can be considered analogous to model catalogues
- they provide the infrastructure for storing, interlinking, querying and visualising 
+Ontology repositories can be considered closely analogous to model
+catalogues they provide the infrastructure for storing, interlinking,
+querying, versioning and visualising ontologies. Relationships
+capturing the alignments and mappings between ontologies are also
+captured allowing easy navigability.
+
+Linked Open vocabularies\cite{LOV} provides a service for discovering
+vocabularies and ontologies published following the principles of
+linked data. Besides the above features, it provides documentation
+about ontologies automatically harvested from their structure and
+identifies dependencies.
+
+Apache Stanbol\cite{Stanbol} provides a set of reusable components for Semantic
+content management.  The Apache Stanbol Ontology Manager provides a
+controlled environment for managing ontologies and ontology
+networks. Main components of the manager include (a) Ontonet, a Java
+API for the construction and management of ontology networks from the
+ontology knowledge base. (b) Registry, an RDF resource that provides
+descriptions of ontology libraries in the knowledge base. The registry
+also provides a management API for administrators to pre-configure
+sets of ontologies loaded in the ontology libraries.
+
+KAON2\cite{Kaon2} provides an API infrastructure for managing OWL-DL,
+SWRL and F-Logic ontologies. Access to the ontologies is provided via
+a single stand alone server. OWL DL Inferencing and SPARQL based
+querying are supported.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 Data warehousing~\cite{kim02} provides a framework for reporting and analysis tasks across disparate enterprise data systems, for decision support. In data warehousing meta data is modelled to extract information from business systems into a centralised data warehouse. The warehouse is used to create reports and analyse business performance. Data warehouse models can be arranged in normalised form, following the relational approach~\cite{inm92}, or `dimensional’ form~\cite{kim02} as quantifiable \emph{facts} and \emph{dimensions} which denote the context of facts. Data warehousing relies on fixed data models and structures, which is in contrast to the more general approach taken in ISO11179, where models are expected to change over time. 
