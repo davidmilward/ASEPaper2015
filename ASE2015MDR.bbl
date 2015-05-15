@@ -38,45 +38,94 @@ D.~Steinberg, F.~Budinsky, M.~Paternostro, and E.~Merks, \emph{EMF: Eclipse
   Modeling Framework}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax
   Addison-Wesley Professional, 2009.
 
-\bibitem{catalyst}
+\bibitem{davi14}
+J.~Davies, J.~Gibbons, S.~Harris, and C.~Crichton, ``The {C}ancer{G}rid
+  experience: Metadata-based model-driven engineering for clinical trials,''
+  \emph{Science of Computer Programming}, vol.~89, pp. 126--143, 2014.
+
+\bibitem{davi12}
+J.~Davies, J.~Gibbons, R.~Calinescu, C.~Crichton, S.~Harris, and A.~Tsui,
+  ``Form follows function: Model-driven engineering for clinical trials,'' in
+  \emph{Foundations of Health Informatics Engineering and Systems}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Springer, 2012, pp. 21--38.
+
+\bibitem{Abler2011}
 \BIBentryALTinterwordspacing
-{University of Washington}. Catalyst web tools. [Online]. Available:
-  \url{http://catalyst.washington.edu/web\_tools/index.html}
+D.~Abler, C.~Crichton, J.~Davies, S.~Harris, and J.~Welch, ``Models for
+  forms,'' \emph{Proceedings of the 11th Workshop on Domain-Specific Modeling},
+  October 2011. [Online]. Available:
+  \url{http://www.dsmforum.org/events/DSM11/}
 \BIBentrySTDinterwordspacing
+
+\bibitem{kunz09}
+I.~Kunz, M.-C. Lin, and L.~Frey, ``Metadata mapping and reuse in cabig™,''
+  \emph{BMC Bioinformatics}, vol.~10, no. Suppl 2, p.~S4, 2009.
+
+\bibitem{koma08}
+G.~A. Komatsoulis, D.~B. Warzel, F.~W. Hartel, K.~Shanbhag, R.~Chilukuri,
+  G.~Fragoso, S.~de~Coronado, D.~M. Reeves, J.~B. Hadfield, C.~Ludet
+  \emph{et~al.}, ``{caCORE} version 3: Implementation of a model driven,
+  service-oriented architecture for semantic interoperability,'' \emph{Journal
+  of Biomedical Informatics}, vol.~41, no.~1, pp. 106--123, 2008.
 
 \bibitem{oc}
 \BIBentryALTinterwordspacing
 Open{C}linica. [Online]. Available: \url{http://www.openclinica.com}
 \BIBentrySTDinterwordspacing
 
-\bibitem{harr09}
-P.~A. Harris, R.~Taylor, R.~Thielke, J.~Payne, N.~Gonzalez, and J.~G. Conde,
-  ``Research electronic data capture ({REDCap})---a metadata-driven methodology
-  and workflow process for providing translational research informatics
-  support,'' \emph{Journal of Biomedical Informatics}, vol.~42, no.~2, pp.
-  377--381, 2009.
+\bibitem{Sinaci2013784}
+\BIBentryALTinterwordspacing
+A.~A. Sinaci and G.~B.~L. Erturkmen, ``A federated semantic metadata registry
+  framework for enabling interoperability across clinical research and care
+  domains,'' \emph{Journal of Biomedical Informatics}, vol.~46, no.~5, pp. 784
+  -- 794, 2013. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1532046413000750}
+\BIBentrySTDinterwordspacing
 
-\bibitem{labk}
-E.~K. Nelson, B.~Piehler, J.~Eckels, A.~Rauch, M.~Bellew, P.~Hussey, S.~Ramsay,
-  C.~Nathe, K.~Lum, K.~Krouse \emph{et~al.}, ``Lab{K}ey {S}erver: An open
-  source platform for scientific data integration, analysis and
-  collaboration,'' \emph{BMC Bioinformatics}, vol.~12, no.~1, p.~71, 2011.
+\bibitem{pmid25405066}
+S.~Jeong, H.~H. Kim, Y.~R. Park, and J.~H. Kim, ``{{C}linical {D}ata {E}lement
+  {O}ntology for {U}nified {I}ndexing and {R}etrieval of {D}ata {E}lements
+  across {M}ultiple {M}etadata {R}egistries},'' \emph{Healthcare Informatics
+  Research}, vol.~20, no.~4, pp. 295--303, Oct 2014.
 
-\bibitem{cais}
-P.~Fearn and F.~Sculli, ``The {CAISIS} research data system,'' in
-  \emph{Biomedical Informatics for Cancer Research}.\hskip 1em plus 0.5em minus
-  0.4em\relax Springer, 2010, pp. 215--225.
+\bibitem{pmid22211181}
+C.~Tao, G.~Jiang, W.~Wei, H.~R. Solbrig, and C.~G. Chute, ``{{T}owards
+  {S}emantic-{W}eb {B}ased {R}epresentation and {H}armonization of {S}tandard
+  {M}eta-data {M}odels for {C}linical {S}tudies},'' \emph{AMIA Summits on
+  Translational Science Proceedings}, vol. 2011, pp. 59--63, 2011.
 
-\bibitem{fran11}
-J.~D. Franklin, A.~Guidry, and J.~F. Brinkley, ``A partnership approach for
-  electronic data capture in small-scale clinical trials,'' \emph{Journal of
-  Biomedical Informatics}, vol.~44, pp. S103--S108, 2011.
+\bibitem{lero12}
+H.~Leroux, S.~McBride, L.~Lefort, M.~Kemp, and S.~Gibson, ``A method for the
+  semantic enrichment of clinical trial data,'' in \emph{Health Informatics:
+  Building a Healthcare Future Through Trusted Information; Selected Papers
+  from the 20th Australian National Health Informatics Conference (HIC 2012)},
+  vol. 178.\hskip 1em plus 0.5em minus 0.4em\relax IOS Press, 2012, p. 111.
 
-\bibitem{lero11}
-H.~Leroux, S.~McBride, and S.~Gibson, ``On selecting a clinical trial
-  management system for large scale, multi-centre, multi-modal clinical
-  research study,'' \emph{Studies in Health Technology and Informatics}, vol.
-  168, pp. 89--95, 2011.
+\bibitem{LOV}
+\BIBentryALTinterwordspacing
+Linked {O}pen {V}ocabularies. [Online]. Available:
+  \url{http://lov.okfn.org/dataset/lov/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Stanbol}
+\BIBentryALTinterwordspacing
+Apache {S}tanbol. [Online]. Available:
+  \url{https://stanbol.apache.org/docs/trunk/components/ontologymanager/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kim02}
+R.~Kimball and M.~Ross, \emph{The Data Warehouse Toolkit: The Complete Guide to
+  Dimensional Modeling}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax New
+  York, NY, USA: John Wiley \& Sons, Inc., 2002.
+
+\bibitem{inm92}
+W.~H. Inmon, \emph{Building the Data Warehouse}.\hskip 1em plus 0.5em minus
+  0.4em\relax Wellesley, MA, USA: QED Information Sciences, Inc., 1992.
+
+\bibitem{poole03}
+J.~Poole, D.~Chang, D.~Tolbert, and D.~Mellor, \emph{Common Warehouse Metamodel
+  Developer's Guide}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley \&
+  Sons, 2003, vol.~24.
 
 \bibitem{dav14}
 J.~Davies, J.~Gibbons, J.~Welch, and E.~Crichton, ``Model-driven engineering of
@@ -138,88 +187,39 @@ P.~Scott and R.~Worden, ``Semantic mapping to simplify deployment of {HL7} v3
   {C}linical {D}ocument {A}rchitecture,'' \emph{Journal of Biomedical
   Informatics}, vol.~45, no.~4, pp. 697--702, 2012.
 
-\bibitem{davi14}
-J.~Davies, J.~Gibbons, S.~Harris, and C.~Crichton, ``The {C}ancer{G}rid
-  experience: Metadata-based model-driven engineering for clinical trials,''
-  \emph{Science of Computer Programming}, vol.~89, pp. 126--143, 2014.
-
-\bibitem{davi12}
-J.~Davies, J.~Gibbons, R.~Calinescu, C.~Crichton, S.~Harris, and A.~Tsui,
-  ``Form follows function: Model-driven engineering for clinical trials,'' in
-  \emph{Foundations of Health Informatics Engineering and Systems}.\hskip 1em
-  plus 0.5em minus 0.4em\relax Springer, 2012, pp. 21--38.
-
-\bibitem{Abler2011}
+\bibitem{catalyst}
 \BIBentryALTinterwordspacing
-D.~Abler, C.~Crichton, J.~Davies, S.~Harris, and J.~Welch, ``Models for
-  forms,'' \emph{Proceedings of the 11th Workshop on Domain-Specific Modeling},
-  October 2011. [Online]. Available:
-  \url{http://www.dsmforum.org/events/DSM11/}
+{University of Washington}. Catalyst web tools. [Online]. Available:
+  \url{http://catalyst.washington.edu/web\_tools/index.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{kunz09}
-I.~Kunz, M.-C. Lin, and L.~Frey, ``Metadata mapping and reuse in cabig™,''
-  \emph{BMC Bioinformatics}, vol.~10, no. Suppl 2, p.~S4, 2009.
+\bibitem{harr09}
+P.~A. Harris, R.~Taylor, R.~Thielke, J.~Payne, N.~Gonzalez, and J.~G. Conde,
+  ``Research electronic data capture ({REDCap})---a metadata-driven methodology
+  and workflow process for providing translational research informatics
+  support,'' \emph{Journal of Biomedical Informatics}, vol.~42, no.~2, pp.
+  377--381, 2009.
 
-\bibitem{koma08}
-G.~A. Komatsoulis, D.~B. Warzel, F.~W. Hartel, K.~Shanbhag, R.~Chilukuri,
-  G.~Fragoso, S.~de~Coronado, D.~M. Reeves, J.~B. Hadfield, C.~Ludet
-  \emph{et~al.}, ``{caCORE} version 3: Implementation of a model driven,
-  service-oriented architecture for semantic interoperability,'' \emph{Journal
-  of Biomedical Informatics}, vol.~41, no.~1, pp. 106--123, 2008.
+\bibitem{labk}
+E.~K. Nelson, B.~Piehler, J.~Eckels, A.~Rauch, M.~Bellew, P.~Hussey, S.~Ramsay,
+  C.~Nathe, K.~Lum, K.~Krouse \emph{et~al.}, ``Lab{K}ey {S}erver: An open
+  source platform for scientific data integration, analysis and
+  collaboration,'' \emph{BMC Bioinformatics}, vol.~12, no.~1, p.~71, 2011.
 
-\bibitem{Sinaci2013784}
-\BIBentryALTinterwordspacing
-A.~A. Sinaci and G.~B.~L. Erturkmen, ``A federated semantic metadata registry
-  framework for enabling interoperability across clinical research and care
-  domains,'' \emph{Journal of Biomedical Informatics}, vol.~46, no.~5, pp. 784
-  -- 794, 2013. [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S1532046413000750}
-\BIBentrySTDinterwordspacing
+\bibitem{cais}
+P.~Fearn and F.~Sculli, ``The {CAISIS} research data system,'' in
+  \emph{Biomedical Informatics for Cancer Research}.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer, 2010, pp. 215--225.
 
-\bibitem{pmid25405066}
-S.~Jeong, H.~H. Kim, Y.~R. Park, and J.~H. Kim, ``{{C}linical {D}ata {E}lement
-  {O}ntology for {U}nified {I}ndexing and {R}etrieval of {D}ata {E}lements
-  across {M}ultiple {M}etadata {R}egistries},'' \emph{Healthcare Informatics
-  Research}, vol.~20, no.~4, pp. 295--303, Oct 2014.
+\bibitem{fran11}
+J.~D. Franklin, A.~Guidry, and J.~F. Brinkley, ``A partnership approach for
+  electronic data capture in small-scale clinical trials,'' \emph{Journal of
+  Biomedical Informatics}, vol.~44, pp. S103--S108, 2011.
 
-\bibitem{pmid22211181}
-C.~Tao, G.~Jiang, W.~Wei, H.~R. Solbrig, and C.~G. Chute, ``{{T}owards
-  {S}emantic-{W}eb {B}ased {R}epresentation and {H}armonization of {S}tandard
-  {M}eta-data {M}odels for {C}linical {S}tudies},'' \emph{AMIA Summits on
-  Translational Science Proceedings}, vol. 2011, pp. 59--63, 2011.
-
-\bibitem{lero12}
-H.~Leroux, S.~McBride, L.~Lefort, M.~Kemp, and S.~Gibson, ``A method for the
-  semantic enrichment of clinical trial data,'' in \emph{Health Informatics:
-  Building a Healthcare Future Through Trusted Information; Selected Papers
-  from the 20th Australian National Health Informatics Conference (HIC 2012)},
-  vol. 178.\hskip 1em plus 0.5em minus 0.4em\relax IOS Press, 2012, p. 111.
-
-\bibitem{LOV}
-\BIBentryALTinterwordspacing
-Linked {O}pen {V}ocabularies. [Online]. Available:
-  \url{http://lov.okfn.org/dataset/lov/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Stanbol}
-\BIBentryALTinterwordspacing
-Apache {S}tanbol. [Online]. Available:
-  \url{https://stanbol.apache.org/docs/trunk/components/ontologymanager/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{kim02}
-R.~Kimball and M.~Ross, \emph{The Data Warehouse Toolkit: The Complete Guide to
-  Dimensional Modeling}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax New
-  York, NY, USA: John Wiley \& Sons, Inc., 2002.
-
-\bibitem{inm92}
-W.~H. Inmon, \emph{Building the Data Warehouse}.\hskip 1em plus 0.5em minus
-  0.4em\relax Wellesley, MA, USA: QED Information Sciences, Inc., 1992.
-
-\bibitem{poole03}
-J.~Poole, D.~Chang, D.~Tolbert, and D.~Mellor, \emph{Common Warehouse Metamodel
-  Developer's Guide}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley \&
-  Sons, 2003, vol.~24.
+\bibitem{lero11}
+H.~Leroux, S.~McBride, and S.~Gibson, ``On selecting a clinical trial
+  management system for large scale, multi-centre, multi-modal clinical
+  research study,'' \emph{Studies in Health Technology and Informatics}, vol.
+  168, pp. 89--95, 2011.
 
 \end{thebibliography}
