@@ -116,34 +116,27 @@ Service (NHS), is providing funding for the collection for the whole
 genome sequencing of blood and tissue samples from patients with
 cancer, rare disorders, and infectious disease.  A network of regional
 Genomic Medicine Centres (GMCs) is being established to collect
-samples and data, and to provide access to genomic medicine across the
-whole of the country.
+samples and provide access to genomic medicine across the whole of the
+country.
 
 The results of the whole genome sequencing will be linked to detailed
 information on each participant: clinical and laboratory information
-drawn from health records, ontological statements regarding abnormal
-features or conditions, and additional information obtained from the
-participant or their representatives.  The information required will
-depend upon the nature of the disease that the patient is suffering
-from.  For example, information on breast density is required in the
-case of breast cancer, but not for other diseases.
+drawn from patient records, ontological statements regarding abnormal
+features or conditions, and contextual information obtained from the
+patient themselves.
 
-131 different diseases have been included in the sequencing programme
-thus far.  Each disease corresponds to a different combination of
-clinical and laboratory data points, a different set of ontological
-statements, and a different set of questions for the participant.
-There are, however, significant overlaps between diseases: for
-example, many different rare diseases will require the same
-information on kidney or heart function.   
 
-The modelling task is at least an order of magnitude greater than that
-required for the NIHR HIC, and yet candidate datasets have already
-been created for more than half of the diseases included.  This is due
-partly to the availability of the model catalogue application from the
-start of the project, and partly to the availability, within the
-catalogue, of the full complement of HIC-defined data models and
-related data sets---including the NHS data dictionary and the national
-cancer reporting datasets. 
+
+Whilst that process was being carried out, some of these datasets were
+added to the Model Catalogue, and the subject matter experts were
+given visibility of the datasets already stored in the Model
+Catalogue. At this point the Model Catalogue was already loaded with
+datasets derived from the NHS Data dictionary such as COSD and from
+the results of the NHIC work. Use of the toolkit resulted in the users
+being able to very quickly assemble a new dataset from an existing
+dataset; they were then able to go through each data element in turn
+and compare it to an existing data element in another datamodel, a
+process that is illustrated in Figure~\ref{fig:dataClassComparison}.
 
 For the Genomics England exercise, the Models Catalogue has had a
 social networking feature added, allowing messaging forums to be
