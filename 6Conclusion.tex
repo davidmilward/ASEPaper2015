@@ -25,28 +25,29 @@ model-driven approach.
 processes of model creation and maintenance mediated by software
 engineers is problematic: there may be misunderstandings regarding
 interpretation, but---more importantly---there are not enough software
-engineers to go around.  The data models belong to the users. 
+engineers to go around.  
 
 \textsl{There will be more models than you think}.  Different models
 will be required for different types of implementation, and---in any
 research domain, at least---data models will be constantly evolving,
 with data being collected against different versions.  
 
-\textsl{Intelligent, automatic support is essential}.  
+\textsl{Intelligent, automatic support is essential}. The information
+content of precise data models is considerable, and there may be
+complex dependencies between data concepts and constraints.  Modellers
+need the same kind of support that programmers have come to expect
+from integrated development environments.  
 
-\textsl{F} automate aspects of model management---versioning and dealing
-  with multiple models
-  \begin{itemize}
-  \item automatically create (and propose) links, including
-    classifications
-  \item have links for new version of (sequential), refactoring of
-    (parallel), derived from (data concepts across models), same as
-    (strong assertion)
-  \item use links in model maintenance - note that the definition that
-    this was derived from has changed
-  \item have publication cycle---a published model is for life
-  \end{itemize}
+For example, the model catalogue and the associated toolset should, as
+far as possible: automatically create or propose links, including
+classifications; manage model versioning, and the consequences for
+linked data concepts; manage dependencies, including those between
+different models for same dataset, targeted at different
+implementation platforms. 
 
+This should come as no surprise in the context of model-driven
+software engineering.  If, as ~\cite{Fowler} suggests, this
+consists in ``using models as programs 
 \textsl{I} general lesson: if you have a model driven approach (data model
   or otherwise) then your management of models has all the same
   challenges as management of source code (you need an IDE) - really,
